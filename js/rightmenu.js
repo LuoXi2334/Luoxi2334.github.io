@@ -124,6 +124,19 @@ rmf.switchReadMode = function () {
 rmf.copySelect = function () {
     document.execCommand('Copy', false, null);
     //这里可以写点东西提示一下 已复制
+	new Vue({
+    data: function () {
+        this.$notify({
+            title: "复制成功😜",
+            message: "感谢你对我内容的认可！",
+            position: 'top-left',
+            offset: 50,
+            showClose: true,
+            type: "warning",
+            duration: 5000
+        });
+    }
+})
 }
 
 //回到顶部
