@@ -144,6 +144,8 @@ cover:
     - https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/2a1732bae8bc1c4d87ae05daa11436731e5e24ba_raw.jpg 
     - https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/55aa81d415d6b04c3a84718bc5c7f1777a6f74f9_raw.jpg 
     - https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/qq_pic_merged_1668848766009.jpg  
+    - https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301222204310.png
+    - https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/qq_pic_merged_1668848562052.jpg
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
   flink: /img/friend_404.gif
@@ -207,7 +209,7 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: 
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -539,7 +541,8 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/qq_pic_merged_1668848562052.jpg)
+background: url(https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301222211019.jpg)
+
 
 # Footer Background
 footer_bg: false
@@ -671,7 +674,7 @@ preloader:
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
 
-# aside (側邊欄)
+# aside (侧边栏)
 # --------------------------------------
 
 aside:
@@ -693,7 +696,7 @@ aside:
       text: 前往净善宫...
       link: https://github.com/LuoXi2334
   card_announcement:
-    enable: true
+    enable: false
     content: 这里是洛希的博客哦！！！
   card_recent_post:
     enable: false
@@ -828,7 +831,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
@@ -838,6 +841,10 @@ aplayerInject:
   enable: true
   per_page: true
 
+aplayer:
+  meting: false
+  asset_inject: false
+  
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
 # position 彈窗位置
@@ -958,7 +965,7 @@ envelope_comment:
 electric_clock:
   enable: true # 开关
   priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
+  enable_page: / # 应用页面
   exclude:
   # - /posts/
   # - /about/
@@ -975,30 +982,16 @@ electric_clock:
   default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
   rectangle: 112.982279,28.19409 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
 
-categoryBar:
-  enable: true
-  column: odd # 显示列数,odd：3列 | even：4列
-  row: 1 #显示行数，默认两行，超过行数切换为滚动显示
-  descr:
-    - 长篇小说连载
-    - 杂谈教程
-    - 玩转Win10
-    - Ubuntu指南
-    - 个人日记
-    - 诗词歌赋
-  cover:
-    - url('https://npm.elemecdn.com/akilar-candyassets/image/cover1.webp')
-    - '#abcdef' # HEX格式色值需要用''包裹，不然会被识别成注释
-    - rgba(45,67,89,0.7)
-    - linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%)
-    - url('https://npm.elemecdn.com/akilar-candyassets/image/cover5.webp')
-    - url('https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp')
+
+# 友链样式，butterfly为默认样式，volantis为站点卡片样式.flexcard为弹性卡片样式
+flink_style: flexcard # butterfly | volantis | flexcard
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
     - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macWhite.css">
     - <link rel="stylesheet" href="/css/sb.css">
@@ -1006,9 +999,12 @@ inject:
     - <link rel="stylesheet" href="/css/rightmenu.css">
     - <link rel="stylesheet" href="/css/iconfont.css">
     - <link rel="stylesheet" href="/css/custom/fixed_comment.css"  media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/universe.css">
 
   bottom: 
-    - <div class="aplayer no-destroy" data-id="7758623999" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+    - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
+    - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
+    - <div class="aplayer no-destroy" data-id="7758623999" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-order=random> </div>
     - <script defer src="/js/light.js"></script> # 霓虹灯(必须defer否则有时候会不生效)
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script>
@@ -1095,3 +1091,5 @@ CDN:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
+    
+    

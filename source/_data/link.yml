@@ -1,25 +1,60 @@
-- class_name: 友情鏈接
-  class_desc: 那些人，那些事
-  link_list:
-    - name: Hexo
-      link: https://hexo.io/zh-tw/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、簡單且強大的網誌框架
-
-- class_name: 網站
-  class_desc: 值得推薦的網站
+- class_name: 网站
+  class_desc: 值得推荐的网站
   link_list:
     - name: Youtube
       link: https://www.youtube.com/
       avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 視頻網站
+      descr: 
     - name: Weibo
       link: https://www.weibo.com/
       avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中國最大社交分享平台
+      descr: 
     - name: Twitter
       link: https://twitter.com/
       avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平台
+      descr: 
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 
 
+      
+- class_name: 大佬们
+  class_desc: butterfly魔改大佬
+  link_list:
+    - name: Akilar
+      link: https://akilar.top
+      avatar: https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301211134553.png
+      descr: 
+      siteshot: https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301050150497.png
+      # siteshot就是站点缩略图的链接。
+    - name: Fomalhaut
+      link: https://www.fomal.cc/
+      avatar: https://lskypro.acozycotage.net/LightPicture/2022/12/60e5d4e39da7c077.webp
+      descr: 
+      siteshot: https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301050155462.png
+    - name: 安知鱼
+      link: https://anzhiy.cn/
+      avatar: https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
+      descr: 
+      siteshot: https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301050158349.png
+    - name: 齐下无贰
+      link: https://weidows.github.io/
+      avatar: https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301211130403.png
+      descr: 
+      siteshot: https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301211127274.png
+      
 
+- class_name: Galgame
+  class_desc: Galgame分享大佬
+  link_list:
+    - name: 青桔网
+      link: https://qingju.eu.org/
+      avatar: https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301291420902.png
+      descr: 
+      siteshot: https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301291419420.png
+    - name: 神隐之乡
+      link: https://syzx.me/
+      avatar: https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301291634331.png
+      descr: 
+      siteshot: https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301291632864.png

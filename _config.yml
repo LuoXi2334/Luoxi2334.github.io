@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 洛希的智慧之殿堂
+title: 洛希の智慧之殿堂
 subtitle: '洛希的小窝'
 description: '知识，与你分享！'
 keywords: 博客
@@ -116,7 +116,7 @@ deploy:
   # Live2D
 ## https://github.com/EYHN/hexo-helper-live2d
 live2d:
-  enable: true #开关插件版看板娘
+  enable: false #开关插件版看板娘
   scriptFrom: local # 默认
   # scriptFrom: https://cdn.cbd.int/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
@@ -146,10 +146,47 @@ feed:
     limit: 20
 rss: /atom.xml
 
+magnet:
+  enable: true
+  priority: 1
+  enable_page: /
+  type: categories
+  devide: 2
+  display:
+    - name: C++
+      display_name: 洛希のC++
+      icon: 📚
+    - name: 计算机基础
+      display_name: 洛希の计算机基础
+      icon: 🎮
+    - name: 经验分享
+      display_name: 洛希の经验分享
+      icon: 🐱‍
+    - name: c语言
+      display_name: 洛希のC语言
+      icon: 👩‍💻
+    - name: C语言经典100题
+      display_name: 洛希のC刷题
+      icon: 📒
+    - name: 随想
+      display_name: 小冰の胡思乱想
+      icon: 💡
+  color_setting:
+    text_color: black
+    text_hover_color: white
+    background_color: "#f2f2f2"
+    background_hover_color: "#b30070"
+  layout:
+    type: id
+    name: recent-posts
+    index: 0
+  temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
+  plus_style: ""
+
 # hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
 categoryBar:
-  enable: true # 开关
+  enable: false # 开关
   priority: 5 #过滤器优先权
   enable_page: / # 应用页面
   layout: # 挂载容器类型
@@ -195,4 +232,21 @@ gitcalendar:
   container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
   gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
   gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js	
-  
+      
+# hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/
+swiper:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  timemode: date #date/updated
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
