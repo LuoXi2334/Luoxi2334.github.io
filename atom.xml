@@ -6,7 +6,7 @@
   <link href="https://bg.luoxi.work/atom.xml" rel="self"/>
   
   <link href="https://bg.luoxi.work/"/>
-  <updated>2023-01-31T15:46:54.019Z</updated>
+  <updated>2023-02-06T17:52:28.591Z</updated>
   <id>https://bg.luoxi.work/</id>
   
   <author>
@@ -18,12 +18,33 @@
   
   <entry>
     <title>封装</title>
+    <link href="https://bg.luoxi.work/2023/02/06/2023/Feb/1/"/>
+    <id>https://bg.luoxi.work/2023/02/06/2023/Feb/1/</id>
+    <published>2023-02-06T14:00:00.000Z</published>
+    <updated>2023-02-06T17:52:28.591Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h1><h2 id="①封装的意义"><a href="#①封装的意义" class="headerlink" title="①封装的意义"></a>①封装的意义</h2><p>1.将属性和行为作为一个整体，表现生活中的事物。</p><p>2.将属性和行为加以<code>权限</code>进行控制</p><p><strong>封装意义一：</strong></p><p>设计类的时候，属性和行为写在一起，表现事物</p><p><strong>语法：</strong></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> 类名&#123;</span><br><span class="line">访问权限:</span><br><span class="line">属性（行为）</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p><strong>例子：</strong></p><p>设计一个<code>圆类</code>，求圆的周长。</p><p>对于上面的案例可以知道要我们设计一个<code>类是圆类</code>，它的类之间执行一个<code>行为是求圆的周长</code>，然后对于执行这个行为必不可少的<code>属性是圆的半径</code>。</p><p>所以关于该案例的代码可以这样写</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义一个全局区的变量PI表示圆周率</span></span><br><span class="line"><span class="type">const</span> <span class="type">double</span> PI = <span class="number">3.14</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 设计一个圆类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Circle</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">// 访问权限是public</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="comment">// 属性(定义整形变量r为半径)</span></span><br><span class="line"><span class="type">int</span> r;</span><br><span class="line"><span class="comment">// 行为(计算周长)</span></span><br><span class="line"><span class="function"><span class="type">double</span> <span class="title">calculateZC</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">return</span> <span class="number">2</span> * PI * r;</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">// 通过圆类创建具体的圆(实例化对象)</span></span><br><span class="line">Circle c1;</span><br><span class="line"><span class="comment">// 给该对象的属性进行赋值</span></span><br><span class="line">c1.r = <span class="number">10</span>;</span><br><span class="line"><span class="comment">// 执行该对象的行为获取该周长</span></span><br><span class="line">cout &lt;&lt; <span class="string">&quot;圆的周长为: &quot;</span> &lt;&lt; c1.<span class="built_in">calculateZC</span>() &lt;&lt; endl;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">洛希的一月份笔记内容</summary>
+    
+    
+    
+    <category term="C++" scheme="https://bg.luoxi.work/categories/C/"/>
+    
+    
+    <category term="类和对象" scheme="https://bg.luoxi.work/tags/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>类和对象</title>
     <link href="https://bg.luoxi.work/2023/01/31/2023/Mon/13/"/>
     <id>https://bg.luoxi.work/2023/01/31/2023/Mon/13/</id>
-    <published>2023-01-31T14:00:00.000Z</published>
-    <updated>2023-01-31T15:46:54.019Z</updated>
+    <published>2023-01-31T12:00:00.000Z</published>
+    <updated>2023-02-06T17:51:33.098Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h1><h2 id="①"><a href="#①" class="headerlink" title="①"></a>①</h2>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h1><h2 id="①三大特性"><a href="#①三大特性" class="headerlink" title="①三大特性"></a>①三大特性</h2><p>C++面向对象的三大特性为：<code>封装、继承、多态</code></p><h2 id="②属性和行为"><a href="#②属性和行为" class="headerlink" title="②属性和行为"></a>②属性和行为</h2><p>C++认为万事万物都皆为对象，对象上有其属性和行为</p><p><strong>例如：</strong></p><p>人可以作为对象，是属于人这个类，属性有姓名、年龄、身高等，行为有走，跑，吃饭等。</p><h2 id="③成员"><a href="#③成员" class="headerlink" title="③成员"></a>③成员</h2><p><strong>类中的属性和行为都可以被称为成员</strong>。比如属性和行为都有以下的几个“绰号”。</p><p><strong>属性：</strong>成员属性、成员变量</p><p><strong>行为：</strong>成员函数、成员方法</p>]]></content>
     
     
     <summary type="html">洛希的一月份笔记内容</summary>
@@ -412,27 +433,6 @@
     
     
     <category term="C语言" scheme="https://bg.luoxi.work/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>三位数</title>
-    <link href="https://bg.luoxi.work/2022/12/22/CTM/1/"/>
-    <id>https://bg.luoxi.work/2022/12/22/CTM/1/</id>
-    <published>2022-12-22T08:00:00.000Z</published>
-    <updated>2022-12-30T17:31:54.359Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="题目：有-1、2、3、4-四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？"><a href="#题目：有-1、2、3、4-四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？" class="headerlink" title="题目：有 1、2、3、4 四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？"></a><strong>题目：</strong>有 <strong>1、2、3、4</strong> 四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？</h2><p><strong>信息：</strong></p><p>1.基于1，2，3，4的三位数</p><p>2.百十个位互不相同</p><p><strong>思路：</strong></p><p>1.定义变量g,s,b,count来分别表示个位，十位，百位，三位数的个数。</p><p>2.利用for循环使得g，s，b能够成功表示1-4。</p><p>3.用if语句来筛选百十个位不等的三位数,并且在if语句内利用count计数。</p><p><strong>题解：</strong></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> g, s, b, count = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> b = <span class="number">1</span>; b &lt; <span class="number">5</span>; b++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> s = <span class="number">1</span>; s &lt; <span class="number">5</span>; s++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> g = <span class="number">1</span>; g &lt; <span class="number">5</span>; g++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (g != s &amp;&amp; g != b &amp;&amp; s != b)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, b * <span class="number">100</span> + s * <span class="number">10</span> + g);</span><br><span class="line">                    count++;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;能组成%d个互不相同且无重复数字的三位数&quot;</span>, count);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>输出结果:</strong></p><p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212211630177.png" alt="image-20221221163026087"></p>]]></content>
-    
-    
-    <summary type="html">洛希的C语言刷题</summary>
-    
-    
-    
-    <category term="C语言经典100题" scheme="https://bg.luoxi.work/categories/C%E8%AF%AD%E8%A8%80%E7%BB%8F%E5%85%B8100%E9%A2%98/"/>
-    
-    
-    <category term="C语言经典100题" scheme="https://bg.luoxi.work/tags/C%E8%AF%AD%E8%A8%80%E7%BB%8F%E5%85%B8100%E9%A2%98/"/>
     
   </entry>
   
