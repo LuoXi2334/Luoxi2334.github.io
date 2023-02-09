@@ -6,7 +6,7 @@
   <link href="https://bg.luoxi.work/atom.xml" rel="self"/>
   
   <link href="https://bg.luoxi.work/"/>
-  <updated>2023-02-08T18:05:34.968Z</updated>
+  <updated>2023-02-09T17:36:52.122Z</updated>
   <id>https://bg.luoxi.work/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://bg.luoxi.work/2023/02/08/2023/Feb/2/"/>
     <id>https://bg.luoxi.work/2023/02/08/2023/Feb/2/</id>
     <published>2023-02-08T14:00:00.000Z</published>
-    <updated>2023-02-08T18:05:34.968Z</updated>
+    <updated>2023-02-09T17:36:52.122Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="对象特性"><a href="#对象特性" class="headerlink" title="对象特性"></a>对象特性</h1><h2 id="①对象的初始化和清理"><a href="#①对象的初始化和清理" class="headerlink" title="①对象的初始化和清理"></a>①对象的初始化和清理</h2><h3 id="（1）构造函数和析构函数"><a href="#（1）构造函数和析构函数" class="headerlink" title="（1）构造函数和析构函数"></a>（1）构造函数和析构函数</h3>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="对象特性"><a href="#对象特性" class="headerlink" title="对象特性"></a>对象特性</h1><h2 id="①对象的初始化和清理"><a href="#①对象的初始化和清理" class="headerlink" title="①对象的初始化和清理"></a>①对象的初始化和清理</h2><p>对于对象的<code>初始化</code>和<code>清理</code>是十分重要的安全问题。</p><p>一个对象或者变量没有初始化状态，对其使用后果是未知的。</p><p>同样的使用完一个对象或者变量，没有及时清理掉，也会造成一定的安全问题。</p><p>C++利用了构造函数和析构函数可以解决上述的问题，这两个函数如果我们不调用编译器将会自动调用，如果<code>我们不提供构造和析构，编译器会提供的构造函数和析构函数是空实现</code>。</p><h3 id="（1）构造函数和析构函数"><a href="#（1）构造函数和析构函数" class="headerlink" title="（1）构造函数和析构函数"></a>（1）构造函数和析构函数</h3><p><strong>构造函数：</strong>主要作用在于创建对象时为对象的<code>成员属性赋值</code>，构造函数由编译器自动调用，无需手动调用。</p><p><strong>析构函数：</strong>主要作用在于对象<code>销毁前</code>系统自动调用，执行一些<code>清理工作</code>。</p><p><strong>构造函数语法：</strong></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">类名()&#123;&#125;</span><br></pre></td></tr></table></figure><p>1、构造函数，没有返回值也不写void</p><p>2、<code>函数名称与类名相同</code></p><p>3、<code>构造函数可以带参数</code>，因此<code>可以发生重载</code></p><p>4、程序在<code>调用对象</code>时会<code>自动调用构造</code>，无须手动调用，而且<code>只会调用一次</code>。</p><p><strong>析构函数语法：</strong></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~类名()&#123;&#125;</span><br></pre></td></tr></table></figure><p>1、析构函数，没有返回值也不写void</p><p>2、函数名称与类名相同，<code>在名称前能加上符号~</code></p><p>3、<code>析构函数不可以有参数</code>，因此<code>不可以发生重载</code></p><p>4、程序在<code>对象销毁</code>前会<code>自动调用析构</code>，无须手动调用而且只<code>会调用一次</code>。</p>]]></content>
     
     
     <summary type="html">洛希的一月份笔记内容</summary>
