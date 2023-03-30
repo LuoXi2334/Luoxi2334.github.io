@@ -425,13 +425,6 @@
 
   
   <url>
-    <loc>https://bg.luoxi.work/tags/C%E8%AF%AD%E8%A8%80%E7%BB%8F%E5%85%B8100%E9%A2%98/</loc>
-    <lastmod>2023-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://bg.luoxi.work/tags/C%E8%AF%AD%E8%A8%80/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -439,7 +432,7 @@
   </url>
   
   <url>
-    <loc>https://bg.luoxi.work/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>https://bg.luoxi.work/tags/C%E8%AF%AD%E8%A8%80%E7%BB%8F%E5%85%B8100%E9%A2%98/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -453,7 +446,7 @@
   </url>
   
   <url>
-    <loc>https://bg.luoxi.work/tags/C/</loc>
+    <loc>https://bg.luoxi.work/tags/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -466,14 +459,14 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://bg.luoxi.work/categories/C%E8%AF%AD%E8%A8%80%E7%BB%8F%E5%85%B8100%E9%A2%98/</loc>
+    <loc>https://bg.luoxi.work/tags/C/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
+  
+
   
   <url>
     <loc>https://bg.luoxi.work/categories/c%E8%AF%AD%E8%A8%80/</loc>
@@ -483,7 +476,7 @@
   </url>
   
   <url>
-    <loc>https://bg.luoxi.work/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</loc>
+    <loc>https://bg.luoxi.work/categories/C%E8%AF%AD%E8%A8%80%E7%BB%8F%E5%85%B8100%E9%A2%98/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -491,6 +484,13 @@
   
   <url>
     <loc>https://bg.luoxi.work/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2023-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bg.luoxi.work/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2023-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
