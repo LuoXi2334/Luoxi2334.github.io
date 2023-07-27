@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>三位数</title>
+    <url>/2022/12/22/CTM/1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="题目：有-1、2、3、4-四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？"><a href="#题目：有-1、2、3、4-四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？" class="headerlink" title="题目：有 1、2、3、4 四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？"></a><strong>题目：</strong>有 <strong>1、2、3、4</strong> 四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？</h2><p><strong>信息：</strong></p>
+<p>1.基于1，2，3，4的三位数</p>
+<p>2.百十个位互不相同</p>
+<p><strong>思路：</strong></p>
+<p>1.定义变量g,s,b,count来分别表示个位，十位，百位，三位数的个数。</p>
+<p>2.利用for循环使得g，s，b能够成功表示1-4。</p>
+<p>3.用if语句来筛选百十个位不等的三位数,并且在if语句内利用count计数。</p>
+<p><strong>题解：</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> g, s, b, count = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> b = <span class="number">1</span>; b &lt; <span class="number">5</span>; b++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> s = <span class="number">1</span>; s &lt; <span class="number">5</span>; s++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> g = <span class="number">1</span>; g &lt; <span class="number">5</span>; g++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (g != s &amp;&amp; g != b &amp;&amp; s != b)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, b * <span class="number">100</span> + s * <span class="number">10</span> + g);</span><br><span class="line">                    count++;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;能组成%d个互不相同且无重复数字的三位数&quot;</span>, count);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>输出结果:</strong></p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212211630177.png" alt="image-20221221163026087"></p>
+]]></content>
+      <categories>
+        <category>C语言经典100题</category>
+      </categories>
+      <tags>
+        <tag>C语言经典100题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>平方数</title>
     <url>/2022/12/22/CTM/2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>题目：</strong>一个整数，它加上100后是一个完全平方数，再加上168又是一个完全平方数，请问该数是多少？</p>
@@ -24,20 +47,22 @@
       </tags>
   </entry>
   <entry>
-    <title>三位数</title>
-    <url>/2022/12/22/CTM/1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="题目：有-1、2、3、4-四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？"><a href="#题目：有-1、2、3、4-四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？" class="headerlink" title="题目：有 1、2、3、4 四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？"></a><strong>题目：</strong>有 <strong>1、2、3、4</strong> 四个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？</h2><p><strong>信息：</strong></p>
-<p>1.基于1，2，3，4的三位数</p>
-<p>2.百十个位互不相同</p>
+    <title>兔子数列</title>
+    <url>/2022/12/28/CTM/4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>题目：</strong>古典问题（兔子生崽）：有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？（输出前40个月即可）</p>
+<hr>
+<p><strong>信息：</strong></p>
+<p>这个是很经典的斐波拉契数列，也称为兔子数列的问题，它的规律是1，1，2，3，5，8，13，21,…</p>
 <p><strong>思路：</strong></p>
-<p>1.定义变量g,s,b,count来分别表示个位，十位，百位，三位数的个数。</p>
-<p>2.利用for循环使得g，s，b能够成功表示1-4。</p>
-<p>3.用if语句来筛选百十个位不等的三位数,并且在if语句内利用count计数。</p>
-<p><strong>题解：</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> g, s, b, count = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> b = <span class="number">1</span>; b &lt; <span class="number">5</span>; b++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> s = <span class="number">1</span>; s &lt; <span class="number">5</span>; s++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> g = <span class="number">1</span>; g &lt; <span class="number">5</span>; g++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (g != s &amp;&amp; g != b &amp;&amp; s != b)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, b * <span class="number">100</span> + s * <span class="number">10</span> + g);</span><br><span class="line">                    count++;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;能组成%d个互不相同且无重复数字的三位数&quot;</span>, count);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>1.定义一个存放四十个元素（40个月的数据）的数组。</p>
+<p>2.初始化数组的第一个元素和第二个元素的值为1。</p>
+<p>3.根据兔子数列的规律，利用for循环40-2次，循环体内容为arr[i+2]=arr[i]+arr[i+1]（兔子数列的规律）。</p>
+<p>4.再利用for循环将他们分别打印出来</p>
+<p><strong>题解：</strong>  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[<span class="number">40</span>];</span><br><span class="line">    arr[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    arr[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;<span class="number">38</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        arr[i+<span class="number">2</span>]=arr[i]+arr[i+<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">      <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;j&lt;<span class="number">40</span>;j++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,arr[j]);</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong>输出结果:</strong></p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212211630177.png" alt="image-20221221163026087"></p>
+<p><strong>输出结果：</strong></p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212310128681.png" alt="image-20221231012833609"></p>
 ]]></content>
       <categories>
         <category>C语言经典100题</category>
@@ -71,28 +96,92 @@
       </tags>
   </entry>
   <entry>
-    <title>兔子数列</title>
-    <url>/2022/12/28/CTM/4/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>题目：</strong>古典问题（兔子生崽）：有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？（输出前40个月即可）</p>
-<hr>
-<p><strong>信息：</strong></p>
-<p>这个是很经典的斐波拉契数列，也称为兔子数列的问题，它的规律是1，1，2，3，5，8，13，21,…</p>
-<p><strong>思路：</strong></p>
-<p>1.定义一个存放四十个元素（40个月的数据）的数组。</p>
-<p>2.初始化数组的第一个元素和第二个元素的值为1。</p>
-<p>3.根据兔子数列的规律，利用for循环40-2次，循环体内容为arr[i+2]=arr[i]+arr[i+1]（兔子数列的规律）。</p>
-<p>4.再利用for循环将他们分别打印出来</p>
-<p><strong>题解：</strong>  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> arr[<span class="number">40</span>];</span><br><span class="line">    arr[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    arr[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;<span class="number">38</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        arr[i+<span class="number">2</span>]=arr[i]+arr[i+<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">      <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>;j&lt;<span class="number">40</span>;j++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,arr[j]);</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>字符串处理函数</title>
+    <url>/2022/12/01/DEnot/1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h1><h2 id="1-存放和表示字符串的两种方法"><a href="#1-存放和表示字符串的两种方法" class="headerlink" title="1.存放和表示字符串的两种方法"></a>1.存放和表示字符串的两种方法</h2><h3 id="①字符串常量"><a href="#①字符串常量" class="headerlink" title="①字符串常量"></a>①字符串常量</h3><p>“I LOVE YOU”,”洛希”</p>
+<h3 id="②字符数组"><a href="#②字符数组" class="headerlink" title="②字符数组"></a>②字符数组</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> main</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//初始化字符数组的每个元素</span></span><br><span class="line">    <span class="type">char</span> str1[<span class="number">10</span>] = &#123;<span class="string">&#x27;L&#x27;</span>,<span class="string">&#x27;O&#x27;</span>,<span class="string">&#x27;V&#x27;</span>,<span class="string">&#x27;E&#x27;</span>,<span class="string">&#x27;\0&#x27;</span>&#125;;</span><br><span class="line"><span class="comment">//可以不写元素的个数，因为编译器会自动计算</span></span><br><span class="line">    <span class="type">char</span> str2[] = &#123;<span class="string">&#x27;L&#x27;</span>,<span class="string">&#x27;O&#x27;</span>,<span class="string">&#x27;V&#x27;</span>,<span class="string">&#x27;E&#x27;</span>,<span class="string">&#x27;\0&#x27;</span>&#125;;</span><br><span class="line"><span class="comment">//使用字符串常量初始化字符数组</span></span><br><span class="line">    <span class="type">char</span> str3[] = &#123;<span class="string">&quot;LOVE&quot;</span>&#125;；</span><br><span class="line"><span class="comment">//使用字符串常量初始化，可以省略大括号</span></span><br><span class="line">    <span class="type">char</span> str4[] =<span class="string">&quot;LOVE&quot;</span>;</span><br></pre></td></tr></table></figure>
 
-<p><strong>输出结果：</strong></p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212310128681.png" alt="image-20221231012833609"></p>
+<h2 id="2-字符串处理函数"><a href="#2-字符串处理函数" class="headerlink" title="2.字符串处理函数"></a>2.字符串处理函数</h2><h3 id="①获取字符串的长度-strlen"><a href="#①获取字符串的长度-strlen" class="headerlink" title="①获取字符串的长度:strlen"></a>①获取字符串的长度:<code>strlen</code></h3><p>为了区分strlen和sizeof的区别，下面用一串代码来进行演示下他们最后所得到的长度</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span><span class="comment">//引用此头文件才能使用字符串函数，当然像vs2019就可以不用，不过最好写上。</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">char</span> str[] = <span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,<span class="built_in">strlen</span>(str));</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,<span class="keyword">sizeof</span>(str));</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>下面分别为用sizeof计算以及用strlen计算得到的结果</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201133823416.png" alt="image-20221201133823416"></p>
+<p>可以看到seziof比strlen多计算出来了一个，那就是我们常见的空字符’\0’</p>
+<h3 id="②拷贝字符串的strcpy和strncpy"><a href="#②拷贝字符串的strcpy和strncpy" class="headerlink" title="②拷贝字符串的strcpy和strncpy"></a>②拷贝字符串的<code>strcpy</code>和<code>strncpy</code></h3><p>对于以上两个拷贝字符串的函数，它们到底有什么区别了，以下用一串代码来进行演示下它们的区别。</p>
+<h4 id="（1）strcpy"><a href="#（1）strcpy" class="headerlink" title="（1）strcpy"></a>（1）strcpy</h4><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">char</span> str1[]=<span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[]=<span class="string">&quot;LOVE YOU&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str3[<span class="number">114514</span>];</span><br><span class="line">    <span class="built_in">strcpy</span>(str2,str1);<span class="comment">//将str1的字符串拷贝到str2中</span></span><br><span class="line">    <span class="built_in">strcpy</span>(str3,<span class="string">&quot;I LOVE YOU&quot;</span>);<span class="comment">//将&quot;T LOVE YOU&quot;这个字符串拷贝到str3中</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1=%s\n&quot;</span>,str1);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str2=%s\n&quot;</span>,str2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str3=%s\n&quot;</span>,str3);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>最后打印出来的结果为</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201135257682.png" alt="image-20221201135257682"></p>
+<p>但是，如果我们将str2的字符串拷贝到str1中将会发生什么呢？</p>
+<p>因为str1只储存了LOVE以及\0这五个字符，但是str2存了一共9个字符，很明显把str2的拷贝到str1中会出现错误，我们来看下这个错误的结果会带来什么吧！</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">char</span> str1[]=<span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[]=<span class="string">&quot;LOVE YOU&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str3[<span class="number">114514</span>];</span><br><span class="line">    <span class="built_in">strcpy</span>(str1,str2);<span class="comment">//将str2的字符串拷贝到str1中</span></span><br><span class="line">    <span class="built_in">strcpy</span>(str3,<span class="string">&quot;I LOVE YOU&quot;</span>);<span class="comment">//将&quot;T LOVE YOU&quot;这个字符串拷贝到str3中</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1=%s\n&quot;</span>,str1);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str2=%s\n&quot;</span>,str2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str3=%s\n&quot;</span>,str3);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201140516834.png" alt="image-20221201140516834"></p>
+<p>但是并没有造成什么影响，这是为什么呢？实际上如果以上代码出现这种错误都是会覆盖掉一些字符的，但是本人用的是VSCODE的编译器，所以没有什么影响。</p>
+<h4 id="（2）strncpy"><a href="#（2）strncpy" class="headerlink" title="（2）strncpy"></a>（2）strncpy</h4><p>strncpy对比strcpy的区别就是多了一个n！当然这是开玩笑的，实际上，多的这一个n就使得它拥有了限制字符拷贝的功能。</p>
+<p>我们通过以下代码来进行理解吧。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">char</span> str1[]=<span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[]=<span class="string">&quot;LOVE YOU&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str3[<span class="number">114514</span>];</span><br><span class="line">    <span class="built_in">strncpy</span>(str1,str2,<span class="number">6</span>);<span class="comment">//将str2的字符串拷贝到str1中,并且限制数量为6</span></span><br><span class="line">    <span class="built_in">strcpy</span>(str3,<span class="string">&quot;I LOVE YOU&quot;</span>);<span class="comment">//将&quot;T LOVE YOU&quot;这个字符串拷贝到str3中</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1=%s\n&quot;</span>,str1);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str2=%s\n&quot;</span>,str2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str3=%s\n&quot;</span>,str3);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于以上的代码将会有怎样的输出结果呢？</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201141257798.png" alt="image-20221201141257798"></p>
+<p>这样我们就实现了限制拷贝的数量，但是我们发现以上打印结果有个很大的问题，就是love y后面出现了乱码？这又是为什么呢？这也是我们经常犯的一个致命的错误，就是把<code>空字符</code>又忘记了！这个在我往期的笔记也有提到过，空字符的重要程度，请参考我的往期文章<a href="https://bg.luoxi.work/2022/11/19/NOnote/5/">字符和字符串 | 洛希的智慧之殿堂 (luoxi.work)</a>。</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201141557022.png" alt="image-20221201141557022"></p>
+<p>对于以上出现的问题，我们就必须要使得str1的第七个字符用’\0’使其进行终止，修改后的代码如下。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[]=<span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line">    str1[<span class="number">6</span>]=<span class="string">&#x27;\0&#x27;</span>;<span class="comment">//使其拷贝到第7个字符进行终止</span></span><br><span class="line">    <span class="type">char</span> str2[]=<span class="string">&quot;LOVE YOU&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str3[<span class="number">114514</span>];</span><br><span class="line">    <span class="built_in">strncpy</span>(str1,str2,<span class="number">6</span>);<span class="comment">//将str2的字符串拷贝到str1中,并且限制数量为6</span></span><br><span class="line">    <span class="built_in">strcpy</span>(str3,<span class="string">&quot;I LOVE YOU&quot;</span>);<span class="comment">//将&quot;T LOVE YOU&quot;这个字符串拷贝到str3中</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1=%s\n&quot;</span>,str1);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str2=%s\n&quot;</span>,str2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str3=%s\n&quot;</span>,str3);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>最后得到的结果才是我们如意的结果</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201141859555.png" alt="image-20221201141859555"></p>
+<h3 id="③连接字符串的strcat和strncat"><a href="#③连接字符串的strcat和strncat" class="headerlink" title="③连接字符串的strcat和strncat"></a>③连接字符串的<code>strcat</code>和<code>strncat</code></h3><p>对于连接字符串的strcat以及strncat的功能很明显就跟连接有很大的关系。而我们看这两个函数是不是也是第二个函数比第一个函数多了一个n？让我们来看看这两个函数的相关功能的演示代码吧！</p>
+<h4 id="（1）strcat"><a href="#（1）strcat" class="headerlink" title="（1）strcat"></a>（1）strcat</h4><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span>    </span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE &quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;YOU&quot;</span>;</span><br><span class="line">    <span class="built_in">strcat</span>(str1,str2);<span class="comment">//将str2的字符串拼接到str1字符串的后面</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1:%s\n&quot;</span>,str1);    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于以上代码的打印结果如下</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201142714923.png" alt="image-20221201142714923"></p>
+<h4 id="（2）strncat"><a href="#（2）strncat" class="headerlink" title="（2）strncat"></a>（2）strncat</h4><p>对于这个函数，很明显也是起到了一共限制的作用，但是唯一有个不同的是，它会<code>自动追加空字符</code>将其结束！所以我们就可以”偷下懒”不用写’\0’了,我们用一串代码来进行演示一下吧！</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span>    </span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE &quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;YOU&quot;</span>;</span><br><span class="line">    <span class="built_in">strncat</span>(str1,str2,<span class="number">1</span>);<span class="comment">//将str2的字符串拼接到str1字符串的后面,限制字符为1</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1:%s\n&quot;</span>,str1);    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下为输出结果</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201143357711.png" alt="image-20221201143357711"></p>
+<h3 id="④比较字符串的strcmp和strncmp"><a href="#④比较字符串的strcmp和strncmp" class="headerlink" title="④比较字符串的strcmp和strncmp"></a>④比较字符串的strcmp和strncmp</h3><p>对于这两个函数的功能，和明显就是比较字符串啦！但是，它比较的究竟是什么呢？是字符串的长度吗？还是什么…如果是比较字符串的长度那第二个函数的限制字符串的长度是不是有点矛盾了，所以这里来讲它们不是用来比较字符串的长度的，而是<code>通过比较ASCII码值来比较两个字符串是否一致</code>。所以它们常在if语句内进行判断。</p>
+<p>对于以上的内容，我将用以下的代码来进行演示它们的功能。</p>
+<h4 id="（1）strcmp"><a href="#（1）strcmp" class="headerlink" title="（1）strcmp"></a>（1）strcmp</h4><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;I LOVE&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(str1, str2))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串不一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于以上代码，我们可以指定str1和str2的字符串是一致的，最后的结果是否会如意呢？我们来看打印结果</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201144523932.png" alt="image-20221201144523932"></p>
+<p>很奇怪，为什么会出现这个结果呢？它们不都是一致的吗？为什么会判断出来它们不一致，这是因为我们<code>忽略了这个函数最后返回的值的多少</code>。</p>
+<p>而strcmp如何计算获得返回值呢？</p>
+<ul>
+<li>自左向右逐个按照<a href="https://blog.csdn.net/MQ0522/article/details/111246235">ASCII码</a>值进行比较，直到出现不同的字符或遇’\0’为止。</li>
+<li>如果返回值 &lt; 0，则表示 s1 小于 s2。</li>
+<li>如果返回值 &gt; 0，则表示 s1 大于 s2。</li>
+<li>如果返回值 = 0，则表示 s1 等于 s2。</li>
+</ul>
+<p>我们用一串代码来计算下它们的返回值吧！</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span>	</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">char</span> a[] = <span class="string">&quot;LOVe&quot;</span>;</span><br><span class="line">    <span class="type">char</span> b[] = <span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> c[] = <span class="string">&quot;love&quot;</span>;</span><br><span class="line">    <span class="type">char</span> d[] = <span class="string">&quot;LOVe&quot;</span>;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">//strcmp()只能比较字符串， 其他形式的参数不能比较 </span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;strcmp(a, b):%d\n&quot;</span>, <span class="built_in">strcmp</span>(a, b));<span class="comment">//字符串之间的比较b和a进行比较，对应上面s1和s2比较</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;strcmp(a, c):%d\n&quot;</span>, <span class="built_in">strcmp</span>(a, c));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;strcmp(a, d):%d\n&quot;</span>, <span class="built_in">strcmp</span>(a, d));</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>打印结果如下</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201145203140.png" alt="image-20221201145203140"></p>
+<p>所以对于我们上面一开始写的代码，if语句里面因为它俩一致返回值为0，导致判断为假，所以我们只需要加个 ！就可以实现判断了。</p>
+<p>修改的代码如下</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;I LOVE&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">strcmp</span>(str1, str2))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串不一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>此时对应的输出结果才符合预期，以下为输出结果。</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201145452913.png" alt="image-20221201145452913"></p>
+<h4 id="（2）strncmp"><a href="#（2）strncmp" class="headerlink" title="（2）strncmp"></a>（2）strncmp</h4><p>对于这个函数，很明显是起到了限制比较字符个数的作用，我们用以下的代码来帮助理解吧！</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE dasdjasdkasd&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;I LOVE asdsaodiasd&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">strncmp</span>(str1, str2,<span class="number">7</span>))<span class="comment">//限制比较前7个字符</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串不一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下为打印的结果</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201145736329.png" alt="image-20221201145736329"></p>
+<p>相反的，如果我们限制前10个字符呢？</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE dasdjasdkasd&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;I LOVE asdsaodiasd&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">strncmp</span>(str1, str2,<span class="number">10</span>))<span class="comment">//限制比较前10个字符</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串不一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>打印结果如下</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201145951821.png" alt="image-20221201145951821"></p>
 ]]></content>
       <categories>
-        <category>C语言经典100题</category>
+        <category>c语言</category>
       </categories>
       <tags>
-        <tag>C语言经典100题</tag>
+        <tag>C语言</tag>
       </tags>
   </entry>
   <entry>
@@ -218,95 +307,6 @@
 <p><strong>6.二维数组的初始化也能偷懒，让编译器根据元素的数量计算数组的长度。但只有第一维度的元素个数可以不写，其他维度必须写上</strong>：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a[][<span class="number">4</span>] = &#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;,&#123;<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>&#125;,&#123;<span class="number">9</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>c语言</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>字符串处理函数</title>
-    <url>/2022/12/01/DEnot/1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h1><h2 id="1-存放和表示字符串的两种方法"><a href="#1-存放和表示字符串的两种方法" class="headerlink" title="1.存放和表示字符串的两种方法"></a>1.存放和表示字符串的两种方法</h2><h3 id="①字符串常量"><a href="#①字符串常量" class="headerlink" title="①字符串常量"></a>①字符串常量</h3><p>“I LOVE YOU”,”洛希”</p>
-<h3 id="②字符数组"><a href="#②字符数组" class="headerlink" title="②字符数组"></a>②字符数组</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> main</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">//初始化字符数组的每个元素</span></span><br><span class="line">    <span class="type">char</span> str1[<span class="number">10</span>] = &#123;<span class="string">&#x27;L&#x27;</span>,<span class="string">&#x27;O&#x27;</span>,<span class="string">&#x27;V&#x27;</span>,<span class="string">&#x27;E&#x27;</span>,<span class="string">&#x27;\0&#x27;</span>&#125;;</span><br><span class="line"><span class="comment">//可以不写元素的个数，因为编译器会自动计算</span></span><br><span class="line">    <span class="type">char</span> str2[] = &#123;<span class="string">&#x27;L&#x27;</span>,<span class="string">&#x27;O&#x27;</span>,<span class="string">&#x27;V&#x27;</span>,<span class="string">&#x27;E&#x27;</span>,<span class="string">&#x27;\0&#x27;</span>&#125;;</span><br><span class="line"><span class="comment">//使用字符串常量初始化字符数组</span></span><br><span class="line">    <span class="type">char</span> str3[] = &#123;<span class="string">&quot;LOVE&quot;</span>&#125;；</span><br><span class="line"><span class="comment">//使用字符串常量初始化，可以省略大括号</span></span><br><span class="line">    <span class="type">char</span> str4[] =<span class="string">&quot;LOVE&quot;</span>;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-字符串处理函数"><a href="#2-字符串处理函数" class="headerlink" title="2.字符串处理函数"></a>2.字符串处理函数</h2><h3 id="①获取字符串的长度-strlen"><a href="#①获取字符串的长度-strlen" class="headerlink" title="①获取字符串的长度:strlen"></a>①获取字符串的长度:<code>strlen</code></h3><p>为了区分strlen和sizeof的区别，下面用一串代码来进行演示下他们最后所得到的长度</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span><span class="comment">//引用此头文件才能使用字符串函数，当然像vs2019就可以不用，不过最好写上。</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">char</span> str[] = <span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,<span class="built_in">strlen</span>(str));</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,<span class="keyword">sizeof</span>(str));</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>下面分别为用sizeof计算以及用strlen计算得到的结果</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201133823416.png" alt="image-20221201133823416"></p>
-<p>可以看到seziof比strlen多计算出来了一个，那就是我们常见的空字符’\0’</p>
-<h3 id="②拷贝字符串的strcpy和strncpy"><a href="#②拷贝字符串的strcpy和strncpy" class="headerlink" title="②拷贝字符串的strcpy和strncpy"></a>②拷贝字符串的<code>strcpy</code>和<code>strncpy</code></h3><p>对于以上两个拷贝字符串的函数，它们到底有什么区别了，以下用一串代码来进行演示下它们的区别。</p>
-<h4 id="（1）strcpy"><a href="#（1）strcpy" class="headerlink" title="（1）strcpy"></a>（1）strcpy</h4><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">char</span> str1[]=<span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[]=<span class="string">&quot;LOVE YOU&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str3[<span class="number">114514</span>];</span><br><span class="line">    <span class="built_in">strcpy</span>(str2,str1);<span class="comment">//将str1的字符串拷贝到str2中</span></span><br><span class="line">    <span class="built_in">strcpy</span>(str3,<span class="string">&quot;I LOVE YOU&quot;</span>);<span class="comment">//将&quot;T LOVE YOU&quot;这个字符串拷贝到str3中</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1=%s\n&quot;</span>,str1);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str2=%s\n&quot;</span>,str2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str3=%s\n&quot;</span>,str3);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>最后打印出来的结果为</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201135257682.png" alt="image-20221201135257682"></p>
-<p>但是，如果我们将str2的字符串拷贝到str1中将会发生什么呢？</p>
-<p>因为str1只储存了LOVE以及\0这五个字符，但是str2存了一共9个字符，很明显把str2的拷贝到str1中会出现错误，我们来看下这个错误的结果会带来什么吧！</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">char</span> str1[]=<span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[]=<span class="string">&quot;LOVE YOU&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str3[<span class="number">114514</span>];</span><br><span class="line">    <span class="built_in">strcpy</span>(str1,str2);<span class="comment">//将str2的字符串拷贝到str1中</span></span><br><span class="line">    <span class="built_in">strcpy</span>(str3,<span class="string">&quot;I LOVE YOU&quot;</span>);<span class="comment">//将&quot;T LOVE YOU&quot;这个字符串拷贝到str3中</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1=%s\n&quot;</span>,str1);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str2=%s\n&quot;</span>,str2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str3=%s\n&quot;</span>,str3);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201140516834.png" alt="image-20221201140516834"></p>
-<p>但是并没有造成什么影响，这是为什么呢？实际上如果以上代码出现这种错误都是会覆盖掉一些字符的，但是本人用的是VSCODE的编译器，所以没有什么影响。</p>
-<h4 id="（2）strncpy"><a href="#（2）strncpy" class="headerlink" title="（2）strncpy"></a>（2）strncpy</h4><p>strncpy对比strcpy的区别就是多了一个n！当然这是开玩笑的，实际上，多的这一个n就使得它拥有了限制字符拷贝的功能。</p>
-<p>我们通过以下代码来进行理解吧。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">char</span> str1[]=<span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[]=<span class="string">&quot;LOVE YOU&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str3[<span class="number">114514</span>];</span><br><span class="line">    <span class="built_in">strncpy</span>(str1,str2,<span class="number">6</span>);<span class="comment">//将str2的字符串拷贝到str1中,并且限制数量为6</span></span><br><span class="line">    <span class="built_in">strcpy</span>(str3,<span class="string">&quot;I LOVE YOU&quot;</span>);<span class="comment">//将&quot;T LOVE YOU&quot;这个字符串拷贝到str3中</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1=%s\n&quot;</span>,str1);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str2=%s\n&quot;</span>,str2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str3=%s\n&quot;</span>,str3);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>对于以上的代码将会有怎样的输出结果呢？</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201141257798.png" alt="image-20221201141257798"></p>
-<p>这样我们就实现了限制拷贝的数量，但是我们发现以上打印结果有个很大的问题，就是love y后面出现了乱码？这又是为什么呢？这也是我们经常犯的一个致命的错误，就是把<code>空字符</code>又忘记了！这个在我往期的笔记也有提到过，空字符的重要程度，请参考我的往期文章<a href="https://bg.luoxi.work/2022/11/19/NOnote/5/">字符和字符串 | 洛希的智慧之殿堂 (luoxi.work)</a>。</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201141557022.png" alt="image-20221201141557022"></p>
-<p>对于以上出现的问题，我们就必须要使得str1的第七个字符用’\0’使其进行终止，修改后的代码如下。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[]=<span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line">    str1[<span class="number">6</span>]=<span class="string">&#x27;\0&#x27;</span>;<span class="comment">//使其拷贝到第7个字符进行终止</span></span><br><span class="line">    <span class="type">char</span> str2[]=<span class="string">&quot;LOVE YOU&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str3[<span class="number">114514</span>];</span><br><span class="line">    <span class="built_in">strncpy</span>(str1,str2,<span class="number">6</span>);<span class="comment">//将str2的字符串拷贝到str1中,并且限制数量为6</span></span><br><span class="line">    <span class="built_in">strcpy</span>(str3,<span class="string">&quot;I LOVE YOU&quot;</span>);<span class="comment">//将&quot;T LOVE YOU&quot;这个字符串拷贝到str3中</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1=%s\n&quot;</span>,str1);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str2=%s\n&quot;</span>,str2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str3=%s\n&quot;</span>,str3);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>最后得到的结果才是我们如意的结果</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201141859555.png" alt="image-20221201141859555"></p>
-<h3 id="③连接字符串的strcat和strncat"><a href="#③连接字符串的strcat和strncat" class="headerlink" title="③连接字符串的strcat和strncat"></a>③连接字符串的<code>strcat</code>和<code>strncat</code></h3><p>对于连接字符串的strcat以及strncat的功能很明显就跟连接有很大的关系。而我们看这两个函数是不是也是第二个函数比第一个函数多了一个n？让我们来看看这两个函数的相关功能的演示代码吧！</p>
-<h4 id="（1）strcat"><a href="#（1）strcat" class="headerlink" title="（1）strcat"></a>（1）strcat</h4><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span>    </span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE &quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;YOU&quot;</span>;</span><br><span class="line">    <span class="built_in">strcat</span>(str1,str2);<span class="comment">//将str2的字符串拼接到str1字符串的后面</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1:%s\n&quot;</span>,str1);    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>对于以上代码的打印结果如下</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201142714923.png" alt="image-20221201142714923"></p>
-<h4 id="（2）strncat"><a href="#（2）strncat" class="headerlink" title="（2）strncat"></a>（2）strncat</h4><p>对于这个函数，很明显也是起到了一共限制的作用，但是唯一有个不同的是，它会<code>自动追加空字符</code>将其结束！所以我们就可以”偷下懒”不用写’\0’了,我们用一串代码来进行演示一下吧！</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span>    </span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE &quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;YOU&quot;</span>;</span><br><span class="line">    <span class="built_in">strncat</span>(str1,str2,<span class="number">1</span>);<span class="comment">//将str2的字符串拼接到str1字符串的后面,限制字符为1</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;str1:%s\n&quot;</span>,str1);    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>以下为输出结果</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201143357711.png" alt="image-20221201143357711"></p>
-<h3 id="④比较字符串的strcmp和strncmp"><a href="#④比较字符串的strcmp和strncmp" class="headerlink" title="④比较字符串的strcmp和strncmp"></a>④比较字符串的strcmp和strncmp</h3><p>对于这两个函数的功能，和明显就是比较字符串啦！但是，它比较的究竟是什么呢？是字符串的长度吗？还是什么…如果是比较字符串的长度那第二个函数的限制字符串的长度是不是有点矛盾了，所以这里来讲它们不是用来比较字符串的长度的，而是<code>通过比较ASCII码值来比较两个字符串是否一致</code>。所以它们常在if语句内进行判断。</p>
-<p>对于以上的内容，我将用以下的代码来进行演示它们的功能。</p>
-<h4 id="（1）strcmp"><a href="#（1）strcmp" class="headerlink" title="（1）strcmp"></a>（1）strcmp</h4><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;I LOVE&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(str1, str2))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串不一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>对于以上代码，我们可以指定str1和str2的字符串是一致的，最后的结果是否会如意呢？我们来看打印结果</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201144523932.png" alt="image-20221201144523932"></p>
-<p>很奇怪，为什么会出现这个结果呢？它们不都是一致的吗？为什么会判断出来它们不一致，这是因为我们<code>忽略了这个函数最后返回的值的多少</code>。</p>
-<p>而strcmp如何计算获得返回值呢？</p>
-<ul>
-<li>自左向右逐个按照<a href="https://blog.csdn.net/MQ0522/article/details/111246235">ASCII码</a>值进行比较，直到出现不同的字符或遇’\0’为止。</li>
-<li>如果返回值 &lt; 0，则表示 s1 小于 s2。</li>
-<li>如果返回值 &gt; 0，则表示 s1 大于 s2。</li>
-<li>如果返回值 = 0，则表示 s1 等于 s2。</li>
-</ul>
-<p>我们用一串代码来计算下它们的返回值吧！</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span>	</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">char</span> a[] = <span class="string">&quot;LOVe&quot;</span>;</span><br><span class="line">    <span class="type">char</span> b[] = <span class="string">&quot;LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> c[] = <span class="string">&quot;love&quot;</span>;</span><br><span class="line">    <span class="type">char</span> d[] = <span class="string">&quot;LOVe&quot;</span>;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">//strcmp()只能比较字符串， 其他形式的参数不能比较 </span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;strcmp(a, b):%d\n&quot;</span>, <span class="built_in">strcmp</span>(a, b));<span class="comment">//字符串之间的比较b和a进行比较，对应上面s1和s2比较</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;strcmp(a, c):%d\n&quot;</span>, <span class="built_in">strcmp</span>(a, c));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;strcmp(a, d):%d\n&quot;</span>, <span class="built_in">strcmp</span>(a, d));</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>打印结果如下</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201145203140.png" alt="image-20221201145203140"></p>
-<p>所以对于我们上面一开始写的代码，if语句里面因为它俩一致返回值为0，导致判断为假，所以我们只需要加个 ！就可以实现判断了。</p>
-<p>修改的代码如下</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;I LOVE&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">strcmp</span>(str1, str2))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串不一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>此时对应的输出结果才符合预期，以下为输出结果。</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201145452913.png" alt="image-20221201145452913"></p>
-<h4 id="（2）strncmp"><a href="#（2）strncmp" class="headerlink" title="（2）strncmp"></a>（2）strncmp</h4><p>对于这个函数，很明显是起到了限制比较字符个数的作用，我们用以下的代码来帮助理解吧！</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE dasdjasdkasd&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;I LOVE asdsaodiasd&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">strncmp</span>(str1, str2,<span class="number">7</span>))<span class="comment">//限制比较前7个字符</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串不一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>以下为打印的结果</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201145736329.png" alt="image-20221201145736329"></p>
-<p>相反的，如果我们限制前10个字符呢？</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> str1[] = <span class="string">&quot;I LOVE dasdjasdkasd&quot;</span>;</span><br><span class="line">    <span class="type">char</span> str2[] = <span class="string">&quot;I LOVE asdsaodiasd&quot;</span>;</span><br><span class="line">    <span class="keyword">if</span> (!<span class="built_in">strncmp</span>(str1, str2,<span class="number">10</span>))<span class="comment">//限制比较前10个字符</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;两个字符串不一致&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>打印结果如下</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221201145951821.png" alt="image-20221201145951821"></p>
 ]]></content>
       <categories>
         <category>c语言</category>
@@ -470,60 +470,6 @@
       </tags>
   </entry>
   <entry>
-    <title>指针数组和数组指针</title>
-    <url>/2022/12/22/DEnot/6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="指针数组和数组指针"><a href="#指针数组和数组指针" class="headerlink" title="指针数组和数组指针"></a>指针数组和数组指针</h1><h2 id="①指针和数组的区别"><a href="#①指针和数组的区别" class="headerlink" title="①指针和数组的区别"></a>①指针和数组的区别</h2><p>指针和数组虽然有很多看起来很相似，但是它们还是有区别的，比如以下的一个例子就能够看出它们之间的一个区别。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">char</span> str[]=<span class="string">&quot;I love you!&quot;</span>;</span><br><span class="line">		<span class="type">int</span> count = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (*str++ != <span class="string">&#x27;\0&#x27;</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		count++;</span><br><span class="line">	&#125;</span><br><span class="line">	pprintf(<span class="string">&quot;&#x27;I love you!&#x27;的字符个数为%d&quot;</span>, count);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>对于以上的代码是来计算”I love you！”这串字符的长度，如果将他进行运行会出</p>
-<p>现什么样的结果呢？</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212131828755.png" alt="image-20221213182834641"></p>
-<p>我们会惊奇的发现，编译器发生了报错！</p>
-<p>这又是为什么呢？还有这里面提到的左值又是什么呢？</p>
-<p><code>左值</code>（lvalue）指的是能够出现在<code>赋值语句</code>的左边的表达式。<code>左值通常是一个变量，或者可以获得变量地址的表达式</code>。这意味着，左值一般<code>具有内存空间</code>，并且<code>能够被改变</code>。</p>
-<p><code>右值</code>（rvalue）指的是能够出现在赋值语句的右边的表达式。<code>右值通常是一个字面值，或者是一个计算结果，它们通常不具有内存空间，并且不能被改变</code>。例如，字符串字面值 “hello” 和整数字面值 5 就是右值。</p>
-<p>根据上面对于左值和右值的解释我们不难发现。上面代码的错误在于，将数组名当作为了左值！ 而<code>数组地址是不可以改变的</code>！</p>
-<p>所以对于以上的代码我们要引入一个可改变的指针变量来进行代表这个数组名地址，这就不仅让我们想到指针运算中的p++是访问下一个地址这个概念了。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">char</span> str[]=<span class="string">&quot;I love you!&quot;</span>;</span><br><span class="line">	<span class="type">char</span> *p =str;<span class="comment">//使用指针来间接访问数组的每一个元素</span></span><br><span class="line">		<span class="type">int</span> count = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (*p != <span class="string">&#x27;\0&#x27;</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		count++;</span><br><span class="line">		p++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;&#x27;I love you!&#x27;的字符个数为%d&quot;</span>, count);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>最后对于以上的代码的输出结果就是我们想要的结果了。</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212141645772.png" alt="image-20221214164542612"></p>
-<p>从这个例子，我不难发现数组和指针最根本的区别就在于，一个代表的是指针变量，是可以改变的值，而另外一个数组名是一个不可改变的地址。</p>
-<h2 id="②指针数组和数组指针"><a href="#②指针数组和数组指针" class="headerlink" title="②指针数组和数组指针"></a>②指针数组和数组指针</h2><h3 id="（1）如何区分？"><a href="#（1）如何区分？" class="headerlink" title="（1）如何区分？"></a>（1）如何区分？</h3><p>对于指针数组和数组指针，相信很多人看到这里就会有点晕了，它俩咋又在一起了捏？其实对于指针数组和数组指针我们只需要看最后两个字就可以辨别出哪个是指针数组而哪个又是数组指针了！</p>
-<p>很显然<code>指针数组是存放指针的数组</code>，而<code>数组指针是指向数组的指针</code>。以下我将会给出两种形式来进行判断。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> *p1[<span class="number">5</span>]</span><br><span class="line"><span class="type">int</span> (*p2)[<span class="number">5</span>]</span><br></pre></td></tr></table></figure>
-
-<p>对于以上的两个形式是不是看起来有点懵，究竟哪个是数组指针，而哪个又是指针数组呢？</p>
-<p>好了，不卖关子了。其实第一种形式的是指针数组而第二种形式的是数组指针。我们先来了解下指针数组吧！</p>
-<p>判断方法:<code>根据运算符的优先级</code></p>
-<p>*p[5]：根据优先级，先看[]，则p是一个数组，再结合，这个数组的元素是指针类型，共5个元素，这是“指针的数组”，即指针数组。</p>
-<p>（*p)[5]：根据优先级，先看括号内，则p是一个指针，这个指针指向一个数组，数组长度为5，这是“数组的指针”，即数组指针；</p>
-<h3 id="（2）指针数组"><a href="#（2）指针数组" class="headerlink" title="（2）指针数组"></a>（2）指针数组</h3><h4 id="1-功能图"><a href="#1-功能图" class="headerlink" title="1.功能图"></a>1.功能图</h4><p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212221456003.png" alt="image-20221222145610949"></p>
-<h4 id="2-例子"><a href="#2-例子" class="headerlink" title="2.例子"></a>2.例子</h4><p>我们从前面可以了解到指针数组是存放指针的数组，那么对于上面的那个形式我们可以理解到，它就是存放整形指针的数组，数组内的每一个元素都是一个整形指针。那么它在代码中应该怎么实现呢？以下一个例子来进行演示一下。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> b = <span class="number">2</span>;</span><br><span class="line">    <span class="type">int</span> c = <span class="number">3</span>;</span><br><span class="line">    <span class="type">int</span>* p[<span class="number">3</span>] = &#123; &amp;a,&amp;b,&amp;c &#125;;<span class="comment">//存放a，b，c的地址</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">2</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;*p[%d] = %d\n&quot;</span>, i, *p[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>上面的代码就很好的展示了指针数组的功能，以下为输出结果。</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212141719276.png" alt="image-20221214171924209"></p>
-<p>但是一般人不会怎么写代码的，所以我们继续看下个例子。从这个例子我相信你就能发现指针数组的魅力所在！</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">char</span> *p[<span class="number">4</span>] = &#123;</span><br><span class="line">	<span class="string">&quot;大佬们好！&quot;</span>,</span><br><span class="line">	<span class="string">&quot;欢迎你们能够访问我的个人博客网站&quot;</span>,</span><br><span class="line">	<span class="string">&quot;我的博客网站的地址是bg.luoxi.work&quot;</span>,</span><br><span class="line">	<span class="string">&quot;Thank you!&quot;</span></span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="comment">//用指针数组来进行存放几个字符串也相当于几个字符串数组</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">3</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, p[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>对于以上的代码的输出结果如下。</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212141732444.png" alt="image-20221214173211379"></p>
-<h3 id="（3）数组指针"><a href="#（3）数组指针" class="headerlink" title="（3）数组指针"></a>（3）数组指针</h3><h4 id="1-功能图-1"><a href="#1-功能图-1" class="headerlink" title="1.功能图"></a>1.功能图</h4><p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212221457390.png" alt="image-20221222145702357"></p>
-<h4 id="2-例子-1"><a href="#2-例子-1" class="headerlink" title="2.例子"></a>2.例子</h4><p>对于数组指针的话，我们知道它是指向数组的指针，所以我们的代码可以这样写。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> a[<span class="number">5</span>] = &#123; <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span> &#125;;</span><br><span class="line">	<span class="type">int</span>(*p)[<span class="number">5</span>] = &amp;a;<span class="comment">//a表示数组第一个元素的地址，&amp;a表示整个数组的地址</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">4</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, *(*p + i));<span class="comment">//括号内的*代表这个数组的地址括号外的*代表取这个数组地址的值</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>以上代码的输出结果为:</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212221526309.png" alt="image-20221222152634240"></p>
-]]></content>
-      <categories>
-        <category>c语言</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>指针和二维数组</title>
     <url>/2022/12/29/DEnot/7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="指针和二维数组"><a href="#指针和二维数组" class="headerlink" title="指针和二维数组"></a>指针和二维数组</h1><h2 id="①二维数组的定义"><a href="#①二维数组的定义" class="headerlink" title="①二维数组的定义"></a>①二维数组的定义</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> b[<span class="number">4</span>][<span class="number">5</span>];<span class="comment">//图解如下图所示</span></span><br></pre></td></tr></table></figure>
@@ -613,6 +559,60 @@
 <h3 id="（2）注意-1"><a href="#（2）注意-1" class="headerlink" title="（2）注意"></a>（2）注意</h3><p>我们可能之前在ASCII表里面看到第一个就是NUL而不是NULL。</p>
 <p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212282236341.png" alt="image-20221228223630270"></p>
 <p>但是它们是截然不同的，比如NULL用于指针和对象，表示的是控制，指向一个不被使用的地址；而’\0’表示字符串的结尾。</p>
+]]></content>
+      <categories>
+        <category>c语言</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>指针数组和数组指针</title>
+    <url>/2022/12/22/DEnot/6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="指针数组和数组指针"><a href="#指针数组和数组指针" class="headerlink" title="指针数组和数组指针"></a>指针数组和数组指针</h1><h2 id="①指针和数组的区别"><a href="#①指针和数组的区别" class="headerlink" title="①指针和数组的区别"></a>①指针和数组的区别</h2><p>指针和数组虽然有很多看起来很相似，但是它们还是有区别的，比如以下的一个例子就能够看出它们之间的一个区别。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">char</span> str[]=<span class="string">&quot;I love you!&quot;</span>;</span><br><span class="line">		<span class="type">int</span> count = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (*str++ != <span class="string">&#x27;\0&#x27;</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		count++;</span><br><span class="line">	&#125;</span><br><span class="line">	pprintf(<span class="string">&quot;&#x27;I love you!&#x27;的字符个数为%d&quot;</span>, count);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于以上的代码是来计算”I love you！”这串字符的长度，如果将他进行运行会出</p>
+<p>现什么样的结果呢？</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212131828755.png" alt="image-20221213182834641"></p>
+<p>我们会惊奇的发现，编译器发生了报错！</p>
+<p>这又是为什么呢？还有这里面提到的左值又是什么呢？</p>
+<p><code>左值</code>（lvalue）指的是能够出现在<code>赋值语句</code>的左边的表达式。<code>左值通常是一个变量，或者可以获得变量地址的表达式</code>。这意味着，左值一般<code>具有内存空间</code>，并且<code>能够被改变</code>。</p>
+<p><code>右值</code>（rvalue）指的是能够出现在赋值语句的右边的表达式。<code>右值通常是一个字面值，或者是一个计算结果，它们通常不具有内存空间，并且不能被改变</code>。例如，字符串字面值 “hello” 和整数字面值 5 就是右值。</p>
+<p>根据上面对于左值和右值的解释我们不难发现。上面代码的错误在于，将数组名当作为了左值！ 而<code>数组地址是不可以改变的</code>！</p>
+<p>所以对于以上的代码我们要引入一个可改变的指针变量来进行代表这个数组名地址，这就不仅让我们想到指针运算中的p++是访问下一个地址这个概念了。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">char</span> str[]=<span class="string">&quot;I love you!&quot;</span>;</span><br><span class="line">	<span class="type">char</span> *p =str;<span class="comment">//使用指针来间接访问数组的每一个元素</span></span><br><span class="line">		<span class="type">int</span> count = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (*p != <span class="string">&#x27;\0&#x27;</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		count++;</span><br><span class="line">		p++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;&#x27;I love you!&#x27;的字符个数为%d&quot;</span>, count);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>最后对于以上的代码的输出结果就是我们想要的结果了。</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212141645772.png" alt="image-20221214164542612"></p>
+<p>从这个例子，我不难发现数组和指针最根本的区别就在于，一个代表的是指针变量，是可以改变的值，而另外一个数组名是一个不可改变的地址。</p>
+<h2 id="②指针数组和数组指针"><a href="#②指针数组和数组指针" class="headerlink" title="②指针数组和数组指针"></a>②指针数组和数组指针</h2><h3 id="（1）如何区分？"><a href="#（1）如何区分？" class="headerlink" title="（1）如何区分？"></a>（1）如何区分？</h3><p>对于指针数组和数组指针，相信很多人看到这里就会有点晕了，它俩咋又在一起了捏？其实对于指针数组和数组指针我们只需要看最后两个字就可以辨别出哪个是指针数组而哪个又是数组指针了！</p>
+<p>很显然<code>指针数组是存放指针的数组</code>，而<code>数组指针是指向数组的指针</code>。以下我将会给出两种形式来进行判断。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> *p1[<span class="number">5</span>]</span><br><span class="line"><span class="type">int</span> (*p2)[<span class="number">5</span>]</span><br></pre></td></tr></table></figure>
+
+<p>对于以上的两个形式是不是看起来有点懵，究竟哪个是数组指针，而哪个又是指针数组呢？</p>
+<p>好了，不卖关子了。其实第一种形式的是指针数组而第二种形式的是数组指针。我们先来了解下指针数组吧！</p>
+<p>判断方法:<code>根据运算符的优先级</code></p>
+<p>*p[5]：根据优先级，先看[]，则p是一个数组，再结合，这个数组的元素是指针类型，共5个元素，这是“指针的数组”，即指针数组。</p>
+<p>（*p)[5]：根据优先级，先看括号内，则p是一个指针，这个指针指向一个数组，数组长度为5，这是“数组的指针”，即数组指针；</p>
+<h3 id="（2）指针数组"><a href="#（2）指针数组" class="headerlink" title="（2）指针数组"></a>（2）指针数组</h3><h4 id="1-功能图"><a href="#1-功能图" class="headerlink" title="1.功能图"></a>1.功能图</h4><p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212221456003.png" alt="image-20221222145610949"></p>
+<h4 id="2-例子"><a href="#2-例子" class="headerlink" title="2.例子"></a>2.例子</h4><p>我们从前面可以了解到指针数组是存放指针的数组，那么对于上面的那个形式我们可以理解到，它就是存放整形指针的数组，数组内的每一个元素都是一个整形指针。那么它在代码中应该怎么实现呢？以下一个例子来进行演示一下。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> b = <span class="number">2</span>;</span><br><span class="line">    <span class="type">int</span> c = <span class="number">3</span>;</span><br><span class="line">    <span class="type">int</span>* p[<span class="number">3</span>] = &#123; &amp;a,&amp;b,&amp;c &#125;;<span class="comment">//存放a，b，c的地址</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">2</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;*p[%d] = %d\n&quot;</span>, i, *p[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面的代码就很好的展示了指针数组的功能，以下为输出结果。</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212141719276.png" alt="image-20221214171924209"></p>
+<p>但是一般人不会怎么写代码的，所以我们继续看下个例子。从这个例子我相信你就能发现指针数组的魅力所在！</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">char</span> *p[<span class="number">4</span>] = &#123;</span><br><span class="line">	<span class="string">&quot;大佬们好！&quot;</span>,</span><br><span class="line">	<span class="string">&quot;欢迎你们能够访问我的个人博客网站&quot;</span>,</span><br><span class="line">	<span class="string">&quot;我的博客网站的地址是bg.luoxi.work&quot;</span>,</span><br><span class="line">	<span class="string">&quot;Thank you!&quot;</span></span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="comment">//用指针数组来进行存放几个字符串也相当于几个字符串数组</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">3</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%s\n&quot;</span>, p[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于以上的代码的输出结果如下。</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212141732444.png" alt="image-20221214173211379"></p>
+<h3 id="（3）数组指针"><a href="#（3）数组指针" class="headerlink" title="（3）数组指针"></a>（3）数组指针</h3><h4 id="1-功能图-1"><a href="#1-功能图-1" class="headerlink" title="1.功能图"></a>1.功能图</h4><p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212221457390.png" alt="image-20221222145702357"></p>
+<h4 id="2-例子-1"><a href="#2-例子-1" class="headerlink" title="2.例子"></a>2.例子</h4><p>对于数组指针的话，我们知道它是指向数组的指针，所以我们的代码可以这样写。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> a[<span class="number">5</span>] = &#123; <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span> &#125;;</span><br><span class="line">	<span class="type">int</span>(*p)[<span class="number">5</span>] = &amp;a;<span class="comment">//a表示数组第一个元素的地址，&amp;a表示整个数组的地址</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">4</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, *(*p + i));<span class="comment">//括号内的*代表这个数组的地址括号外的*代表取这个数组地址的值</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以上代码的输出结果为:</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202212221526309.png" alt="image-20221222152634240"></p>
 ]]></content>
       <categories>
         <category>c语言</category>
@@ -958,71 +958,6 @@
       </tags>
   </entry>
   <entry>
-    <title>常量和宏定义</title>
-    <url>/2022/11/10/NOnote/3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="常量和宏定义"><a href="#常量和宏定义" class="headerlink" title="常量和宏定义"></a>常量和宏定义</h1><h2 id="1-常量"><a href="#1-常量" class="headerlink" title="1.常量"></a>1.常量</h2><h3 id="1-定义"><a href="#1-定义" class="headerlink" title="(1) 定义"></a>(1) 定义</h3><p>在程序运行的过程中，它的值不能被改变我们称之为常量</p>
-<h3 id="2-分类"><a href="#2-分类" class="headerlink" title="(2) 分类"></a>(2) 分类</h3><p>（1）整形常量：114514，1919810</p>
-<p>（2）实型常量：3.1415，1.14514</p>
-<p>（3）字符常量</p>
-<p>1.普通字符：‘L’, ‘O’, ‘V’, ‘E’</p>
-<p>2.转义字符：‘\n’, ‘/t’</p>
-<p>（4）字符串常量:”LoveC”</p>
-<p>（5）符号常量:使用之前必须先定义</p>
-<h2 id="2-宏定义"><a href="#2-宏定义" class="headerlink" title="2.宏定义"></a>2.宏定义</h2><h3 id="1-格式"><a href="#1-格式" class="headerlink" title="(1) 格式"></a>(1) 格式</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> 标识符 常量<span class="comment">//define的功能就是将程序中所有出现的标识符把它替换为后面的常量</span></span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-例子"><a href="#2-例子" class="headerlink" title="(2)例子"></a>(2)例子</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> URL <span class="string">&quot;https://gitee.com/luoxi-c&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> NAME ”洛希“</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> OLD 18</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%s在%d开始学c语言，这是他的gitte网站%s&quot;</span>，NAME,OLD,URL);</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>以下为输出的结果</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221108151637041.png" alt="image-20221108151637041"></p>
-<h2 id="3-标识符"><a href="#3-标识符" class="headerlink" title="3.标识符"></a>3.标识符</h2><h3 id="1-要求"><a href="#1-要求" class="headerlink" title="(1)要求"></a>(1)要求</h3><p>1.标识符只能是<code>英文字母(</code>A-a,a-Z)和<code>数字</code>(0-9)或者<code>下划线</code>(_)组成。</p>
-<p>2.第一个字母必须是<code>字母或者下划线开头</code>。</p>
-<p>3.变量名必须区分大小写,习惯以小写命名变量名,用大写字母来表示符号常量名。</p>
-<p>4.不能使用<code>关键字</code>来进行给变量命名。</p>
-<p><strong><u>注：标识符的要求和变量的要求基本一样</u></strong></p>
-<h2 id="4-字符串常量"><a href="#4-字符串常量" class="headerlink" title="4.字符串常量"></a>4.字符串常量</h2><h3 id="1-字符"><a href="#1-字符" class="headerlink" title="(1) 字符"></a>(1) 字符</h3><p>‘L’ , ‘O’ , ‘V’ , ‘E’ (需要四个字节来存放)</p>
-<h3 id="2-字符串"><a href="#2-字符串" class="headerlink" title="(2) 字符串"></a>(2) 字符串</h3><p>”LOVE”</p>
-<!--'L' , 'O' , 'V' , 'E'-->(需要四个字节来存放)
-
-<p>“LOVE YOU”</p>
-<!--'L' , 'O' , 'V' , 'E' '' 'Y' 'O' 'U'-->（需要八个字节来存放）
-
-<h3 id="3-空字符"><a href="#3-空字符" class="headerlink" title="(3) 空字符"></a>(3) 空字符</h3><p>但以上是存在问题的，但是问题出在哪里呢？？？</p>
-<p>问题出在代码写完了，操作系统应该如何来判断一个字符串的长度，在以上LOVE以及LOVE YOU 虽然只是对应四个字节以及八个字节，后面可能还会有几千个字节的长度的字符串，<code>所以需要一个特殊的转移字符来确定字符串的结束位置，这个转移字符就是\0。</code>它就如同生物学里面的氨基酸的终止密码子一般。</p>
-]]></content>
-      <categories>
-        <category>c语言</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>变量</title>
-    <url>/2022/11/10/NOnote/2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><h2 id="1-意义"><a href="#1-意义" class="headerlink" title="1.意义"></a>1.意义</h2><p>变量的意义就是<code>明确目标并提供存放的空间。</code></p>
-<h2 id="2-要求"><a href="#2-要求" class="headerlink" title="2.要求"></a>2.要求</h2><p>1.变量名只能是<code>英文字母(</code>A-a,a-Z)和<code>数字</code>(0-9)或者<code>下划线</code>(_)组成。</p>
-<p>2.第一个字母必须是<code>字母或者下划线开头</code>。</p>
-<p>3.变量名必须区分大小写,习惯以小写命名变量名,用大写字母来表示符号常量名。</p>
-<p>4.不能使用<code>关键字</code>来进行给变量命名。</p>
-<h2 id="3-关键字"><a href="#3-关键字" class="headerlink" title="3.关键字"></a>3.关键字</h2><p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221108135335646.png" alt="image-20221108135335646"></p>
-<h2 id="4-声明变量的语法"><a href="#4-声明变量的语法" class="headerlink" title="4.声明变量的语法"></a>4.声明变量的语法</h2><p>公式：数据类型+变量名</p>
-<p>比如，我们举个例子，以下列内容来进行理解</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a<span class="comment">//int是整形，这个指a可以存放一个整形数据。</span></span><br><span class="line"><span class="type">char</span> b<span class="comment">//char是字符型，这个指b可以存放一个字节。</span></span><br><span class="line"><span class="type">float</span> c<span class="comment">//float是单精度浮点型。</span></span><br><span class="line"><span class="type">double</span> d<span class="comment">//double是双精度浮点型。</span></span><br></pre></td></tr></table></figure>
-
-<p>下面我在继续以一串代码来理解上面这些内容</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> a;</span><br><span class="line"><span class="type">char</span> b;</span><br><span class="line"><span class="type">float</span> c;</span><br><span class="line"><span class="type">double</span> d;</span><br><span class="line">   a=<span class="number">114514</span>;</span><br><span class="line">   b=<span class="string">&#x27;A&#x27;</span>;</span><br><span class="line">c=<span class="number">3.14</span>;</span><br><span class="line">d=<span class="number">3.141592653</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,a);<span class="comment">//%d表示输出十进制有符号的整数</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%c\n&quot;</span>,b);<span class="comment">//%c表述输出单个字符</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%.2f\n&quot;</span>,c);<span class="comment">//%.2f表示精确到小数点后二位2,%f为浮点型。</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%11.9f\n&quot;</span>,d);<span class="comment">//%11.9f表示腾出十一位，精确到小数点后九位</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>以下为打印出来的结果</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221108142451763.png" alt="image-20221108142451763"></p>
-]]></content>
-      <categories>
-        <category>c语言</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数组初步</title>
     <url>/2022/12/01/NOnote/11/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="数组初步"><a href="#数组初步" class="headerlink" title="数组初步"></a>数组初步</h1><h2 id="1-数组的定义"><a href="#1-数组的定义" class="headerlink" title="1.数组的定义"></a>1.数组的定义</h2><p>首先我们要了解应该如何去定义一个数组，我们可以通过以下这个形式来进行定义。</p>
@@ -1101,6 +1036,71 @@
 <p><strong>vs2019</strong></p>
 <p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221130191538588.png" alt="image-20221130191538588"></p>
 <p><code>由此可见，在c语言中，数组内的元素并不能全部进行赋值，只能小于数组的总元素。</code></p>
+]]></content>
+      <categories>
+        <category>c语言</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>变量</title>
+    <url>/2022/11/10/NOnote/2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><h2 id="1-意义"><a href="#1-意义" class="headerlink" title="1.意义"></a>1.意义</h2><p>变量的意义就是<code>明确目标并提供存放的空间。</code></p>
+<h2 id="2-要求"><a href="#2-要求" class="headerlink" title="2.要求"></a>2.要求</h2><p>1.变量名只能是<code>英文字母(</code>A-a,a-Z)和<code>数字</code>(0-9)或者<code>下划线</code>(_)组成。</p>
+<p>2.第一个字母必须是<code>字母或者下划线开头</code>。</p>
+<p>3.变量名必须区分大小写,习惯以小写命名变量名,用大写字母来表示符号常量名。</p>
+<p>4.不能使用<code>关键字</code>来进行给变量命名。</p>
+<h2 id="3-关键字"><a href="#3-关键字" class="headerlink" title="3.关键字"></a>3.关键字</h2><p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221108135335646.png" alt="image-20221108135335646"></p>
+<h2 id="4-声明变量的语法"><a href="#4-声明变量的语法" class="headerlink" title="4.声明变量的语法"></a>4.声明变量的语法</h2><p>公式：数据类型+变量名</p>
+<p>比如，我们举个例子，以下列内容来进行理解</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a<span class="comment">//int是整形，这个指a可以存放一个整形数据。</span></span><br><span class="line"><span class="type">char</span> b<span class="comment">//char是字符型，这个指b可以存放一个字节。</span></span><br><span class="line"><span class="type">float</span> c<span class="comment">//float是单精度浮点型。</span></span><br><span class="line"><span class="type">double</span> d<span class="comment">//double是双精度浮点型。</span></span><br></pre></td></tr></table></figure>
+
+<p>下面我在继续以一串代码来理解上面这些内容</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> a;</span><br><span class="line"><span class="type">char</span> b;</span><br><span class="line"><span class="type">float</span> c;</span><br><span class="line"><span class="type">double</span> d;</span><br><span class="line">   a=<span class="number">114514</span>;</span><br><span class="line">   b=<span class="string">&#x27;A&#x27;</span>;</span><br><span class="line">c=<span class="number">3.14</span>;</span><br><span class="line">d=<span class="number">3.141592653</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,a);<span class="comment">//%d表示输出十进制有符号的整数</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%c\n&quot;</span>,b);<span class="comment">//%c表述输出单个字符</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%.2f\n&quot;</span>,c);<span class="comment">//%.2f表示精确到小数点后二位2,%f为浮点型。</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%11.9f\n&quot;</span>,d);<span class="comment">//%11.9f表示腾出十一位，精确到小数点后九位</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下为打印出来的结果</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221108142451763.png" alt="image-20221108142451763"></p>
+]]></content>
+      <categories>
+        <category>c语言</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常量和宏定义</title>
+    <url>/2022/11/10/NOnote/3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="常量和宏定义"><a href="#常量和宏定义" class="headerlink" title="常量和宏定义"></a>常量和宏定义</h1><h2 id="1-常量"><a href="#1-常量" class="headerlink" title="1.常量"></a>1.常量</h2><h3 id="1-定义"><a href="#1-定义" class="headerlink" title="(1) 定义"></a>(1) 定义</h3><p>在程序运行的过程中，它的值不能被改变我们称之为常量</p>
+<h3 id="2-分类"><a href="#2-分类" class="headerlink" title="(2) 分类"></a>(2) 分类</h3><p>（1）整形常量：114514，1919810</p>
+<p>（2）实型常量：3.1415，1.14514</p>
+<p>（3）字符常量</p>
+<p>1.普通字符：‘L’, ‘O’, ‘V’, ‘E’</p>
+<p>2.转义字符：‘\n’, ‘/t’</p>
+<p>（4）字符串常量:”LoveC”</p>
+<p>（5）符号常量:使用之前必须先定义</p>
+<h2 id="2-宏定义"><a href="#2-宏定义" class="headerlink" title="2.宏定义"></a>2.宏定义</h2><h3 id="1-格式"><a href="#1-格式" class="headerlink" title="(1) 格式"></a>(1) 格式</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> 标识符 常量<span class="comment">//define的功能就是将程序中所有出现的标识符把它替换为后面的常量</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-例子"><a href="#2-例子" class="headerlink" title="(2)例子"></a>(2)例子</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> URL <span class="string">&quot;https://gitee.com/luoxi-c&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> NAME ”洛希“</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> OLD 18</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%s在%d开始学c语言，这是他的gitte网站%s&quot;</span>，NAME,OLD,URL);</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下为输出的结果</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221108151637041.png" alt="image-20221108151637041"></p>
+<h2 id="3-标识符"><a href="#3-标识符" class="headerlink" title="3.标识符"></a>3.标识符</h2><h3 id="1-要求"><a href="#1-要求" class="headerlink" title="(1)要求"></a>(1)要求</h3><p>1.标识符只能是<code>英文字母(</code>A-a,a-Z)和<code>数字</code>(0-9)或者<code>下划线</code>(_)组成。</p>
+<p>2.第一个字母必须是<code>字母或者下划线开头</code>。</p>
+<p>3.变量名必须区分大小写,习惯以小写命名变量名,用大写字母来表示符号常量名。</p>
+<p>4.不能使用<code>关键字</code>来进行给变量命名。</p>
+<p><strong><u>注：标识符的要求和变量的要求基本一样</u></strong></p>
+<h2 id="4-字符串常量"><a href="#4-字符串常量" class="headerlink" title="4.字符串常量"></a>4.字符串常量</h2><h3 id="1-字符"><a href="#1-字符" class="headerlink" title="(1) 字符"></a>(1) 字符</h3><p>‘L’ , ‘O’ , ‘V’ , ‘E’ (需要四个字节来存放)</p>
+<h3 id="2-字符串"><a href="#2-字符串" class="headerlink" title="(2) 字符串"></a>(2) 字符串</h3><p>”LOVE”</p>
+<!--'L' , 'O' , 'V' , 'E'-->(需要四个字节来存放)
+
+<p>“LOVE YOU”</p>
+<!--'L' , 'O' , 'V' , 'E' '' 'Y' 'O' 'U'-->（需要八个字节来存放）
+
+<h3 id="3-空字符"><a href="#3-空字符" class="headerlink" title="(3) 空字符"></a>(3) 空字符</h3><p>但以上是存在问题的，但是问题出在哪里呢？？？</p>
+<p>问题出在代码写完了，操作系统应该如何来判断一个字符串的长度，在以上LOVE以及LOVE YOU 虽然只是对应四个字节以及八个字节，后面可能还会有几千个字节的长度的字符串，<code>所以需要一个特殊的转移字符来确定字符串的结束位置，这个转移字符就是\0。</code>它就如同生物学里面的氨基酸的终止密码子一般。</p>
 ]]></content>
       <categories>
         <category>c语言</category>
@@ -1206,50 +1206,6 @@
       </tags>
   </entry>
   <entry>
-    <title>scanf函数</title>
-    <url>/2022/11/17/NOnote/7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="scanf函数"><a href="#scanf函数" class="headerlink" title="scanf函数"></a>scanf函数</h1><h2 id="1-功能"><a href="#1-功能" class="headerlink" title="1.功能"></a>1.功能</h2><p>scanf ()是C语言中的一个输入函数，作用是<code>通过键盘给程序中的变量赋值</code>，可以按用户指定的格式从键盘上把数据输入到指定的变量之中；基本语法格式为“scanf (“格式符”，输入参数)”。 scanf ()是C语言中的一个输入函数。</p>
-<h2 id="2-格式"><a href="#2-格式" class="headerlink" title="2.格式"></a>2.格式</h2><h3 id="①格式一"><a href="#①格式一" class="headerlink" title="①格式一"></a>①格式一</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;输入控制符&quot;</span>, 输入参数);</span><br></pre></td></tr></table></figure>
-
-<h4 id="（1）功能"><a href="#（1）功能" class="headerlink" title="（1）功能"></a>（1）功能</h4><p><code>将从键盘输入的字符转化为“输入控制符”所规定格式的数据，然后存入以输入参数的值为地址的变量中</code>。</p>
-<p>下面用一串代码来举个例子</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> a;</span><br><span class="line">a = <span class="number">114514</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;a = %d\n&quot;</span>, a);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-
-<p>这串代码很简单，最后打印结果不用说都知道a=114514，但是对于这个值是不是已经固定为114514了，而不能是其他的值，很多时候我们希望这个值能够灵活一点，让它能够变成其他值，此时就要用到scanf函数。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> a;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;a); <span class="comment">//&amp;a 表示变量 a 的地址，&amp;是取地址符</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;a = %d\n&quot;</span>, a);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>对于以上的代码需要清楚两点</p>
-<p>1.“输入控制符”和“输出控制符”是一模一样的。比如一个整型数据，通过 printf 输出时用%d输出，通过 scanf 输入时同样是用%d。</p>
-<p>2.&amp;是一个取地址运算符，&amp;后面加变量名表示“该变量的地址”，所以&amp;a就表示变量a地址。&amp;a又称为“取地址a”，就相当于将数据存入以变量 a 的地址为地址的变量中。</p>
-<h4 id="（2）总结"><a href="#（2）总结" class="headerlink" title="（2）总结"></a>（2）总结</h4><p>scanf 语句的意思就是：从键盘上输入字符 1919810或者其他内容，%d将这几个字符转化成十进制数 1919810，最后通过“取地址 a”找到变量 a 的地址，再将数字 1919810 放到以变量 a 的地址为地址的变量中，即变量 a 中，所以最终的输出结果就是a=1919810，结果如下图。</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221117001331216.png" alt="image-20221117001331216"></p>
-<h3 id="②格式二"><a href="#②格式二" class="headerlink" title="②格式二"></a>②格式二</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;输入控制符非输入控制符&quot;</span>, 输入参数);</span><br></pre></td></tr></table></figure>
-
-<p>下面用一串代码来演示这个形式</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> a;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;a = %d&quot;</span>, &amp;a);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;a = %d\n&quot;</span>, a);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-
-<p>在 printf 中，所有的“非输出控制符”都要原样输出。同样，<code>在 scanf 中，所有的“非输入控制符”都要原样输入。</code>所以在输入的时候a=必须要原样输入。比如要从键盘给变量 a 赋值 114514，那么必须要输入a=114514才正确，少一个都不行，否则就是错误，结果就是a=0</p>
-<p>如下图所示</p>
-<p><strong>错误的</strong></p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221117004017521.png" alt="image-20221117004017521"></p>
-<p><strong>正确的</strong></p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221117004058287.png" alt="image-20221117004058287"></p>
-<h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3.总结"></a>3.总结</h2><ol>
-<li>在 scanf 的“输入参数”中，<code>变量前面的取地址符&amp;不要忘记</code>。</li>
-<li>scanf 中双引号内，除了“输入控制符”外什么都不要写。</li>
-<li>“输出控制符”和“输出参数”无论在“顺序上”还是在“个数上”一定要一一对应。</li>
-<li>“输入控制符”的类型和变量所定义的类型一定要一致。对于从键盘输入的数据的类型，数据是用户输入的，程序员是无法决定的，所以在写程序时要考虑容错处理，这个稍后再讲。</li>
-<li>使用 scanf 之前先用 printf 提示输入。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>c语言</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字符和字符串</title>
     <url>/2022/11/10/NOnote/5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="字符和字符串"><a href="#字符和字符串" class="headerlink" title="字符和字符串"></a>字符和字符串</h1><h2 id="1-区别"><a href="#1-区别" class="headerlink" title="1.区别"></a>1.区别</h2><p>字符就是<code>单个字符</code>，字符串就是<code>多个字符</code>的集合。</p>
@@ -1323,6 +1279,50 @@
 <p>代码如下</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span> <span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> a;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;请输入你的分数：&quot;</span>);</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a);</span><br><span class="line"><span class="keyword">if</span>(a&gt;=<span class="number">90</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;A&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(a&lt;<span class="number">90</span> &amp;&amp; a&gt;=<span class="number">80</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;B&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(a&lt;<span class="number">80</span> &amp;&amp; a&gt;=<span class="number">70</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;C&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(a&lt;<span class="number">70</span> &amp;&amp; a&gt;=<span class="number">60</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;D&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(a&lt;<span class="number">60</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;E&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+]]></content>
+      <categories>
+        <category>c语言</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>scanf函数</title>
+    <url>/2022/11/17/NOnote/7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="scanf函数"><a href="#scanf函数" class="headerlink" title="scanf函数"></a>scanf函数</h1><h2 id="1-功能"><a href="#1-功能" class="headerlink" title="1.功能"></a>1.功能</h2><p>scanf ()是C语言中的一个输入函数，作用是<code>通过键盘给程序中的变量赋值</code>，可以按用户指定的格式从键盘上把数据输入到指定的变量之中；基本语法格式为“scanf (“格式符”，输入参数)”。 scanf ()是C语言中的一个输入函数。</p>
+<h2 id="2-格式"><a href="#2-格式" class="headerlink" title="2.格式"></a>2.格式</h2><h3 id="①格式一"><a href="#①格式一" class="headerlink" title="①格式一"></a>①格式一</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;输入控制符&quot;</span>, 输入参数);</span><br></pre></td></tr></table></figure>
+
+<h4 id="（1）功能"><a href="#（1）功能" class="headerlink" title="（1）功能"></a>（1）功能</h4><p><code>将从键盘输入的字符转化为“输入控制符”所规定格式的数据，然后存入以输入参数的值为地址的变量中</code>。</p>
+<p>下面用一串代码来举个例子</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> a;</span><br><span class="line">a = <span class="number">114514</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;a = %d\n&quot;</span>, a);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p>这串代码很简单，最后打印结果不用说都知道a=114514，但是对于这个值是不是已经固定为114514了，而不能是其他的值，很多时候我们希望这个值能够灵活一点，让它能够变成其他值，此时就要用到scanf函数。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> a;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;a); <span class="comment">//&amp;a 表示变量 a 的地址，&amp;是取地址符</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;a = %d\n&quot;</span>, a);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于以上的代码需要清楚两点</p>
+<p>1.“输入控制符”和“输出控制符”是一模一样的。比如一个整型数据，通过 printf 输出时用%d输出，通过 scanf 输入时同样是用%d。</p>
+<p>2.&amp;是一个取地址运算符，&amp;后面加变量名表示“该变量的地址”，所以&amp;a就表示变量a地址。&amp;a又称为“取地址a”，就相当于将数据存入以变量 a 的地址为地址的变量中。</p>
+<h4 id="（2）总结"><a href="#（2）总结" class="headerlink" title="（2）总结"></a>（2）总结</h4><p>scanf 语句的意思就是：从键盘上输入字符 1919810或者其他内容，%d将这几个字符转化成十进制数 1919810，最后通过“取地址 a”找到变量 a 的地址，再将数字 1919810 放到以变量 a 的地址为地址的变量中，即变量 a 中，所以最终的输出结果就是a=1919810，结果如下图。</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221117001331216.png" alt="image-20221117001331216"></p>
+<h3 id="②格式二"><a href="#②格式二" class="headerlink" title="②格式二"></a>②格式二</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;输入控制符非输入控制符&quot;</span>, 输入参数);</span><br></pre></td></tr></table></figure>
+
+<p>下面用一串代码来演示这个形式</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="type">int</span> a;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;a = %d&quot;</span>, &amp;a);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;a = %d\n&quot;</span>, a);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p>在 printf 中，所有的“非输出控制符”都要原样输出。同样，<code>在 scanf 中，所有的“非输入控制符”都要原样输入。</code>所以在输入的时候a=必须要原样输入。比如要从键盘给变量 a 赋值 114514，那么必须要输入a=114514才正确，少一个都不行，否则就是错误，结果就是a=0</p>
+<p>如下图所示</p>
+<p><strong>错误的</strong></p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221117004017521.png" alt="image-20221117004017521"></p>
+<p><strong>正确的</strong></p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/image-20221117004058287.png" alt="image-20221117004058287"></p>
+<h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3.总结"></a>3.总结</h2><ol>
+<li>在 scanf 的“输入参数”中，<code>变量前面的取地址符&amp;不要忘记</code>。</li>
+<li>scanf 中双引号内，除了“输入控制符”外什么都不要写。</li>
+<li>“输出控制符”和“输出参数”无论在“顺序上”还是在“个数上”一定要一一对应。</li>
+<li>“输入控制符”的类型和变量所定义的类型一定要一致。对于从键盘输入的数据的类型，数据是用户输入的，程序员是无法决定的，所以在写程序时要考虑容错处理，这个稍后再讲。</li>
+<li>使用 scanf 之前先用 printf 提示输入。</li>
+</ol>
 ]]></content>
       <categories>
         <category>c语言</category>
@@ -1927,8 +1927,7 @@
 <p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202307272337098.jpg" alt="Screenshot_2023-07-27-23-36-20-213_com.mihoyo.hyp"></p>
 <p><strong>3、扫码之后并且得到下面的结果即绑定stoken和cookie全部成功！</strong></p>
 <p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202307272349944.png" alt="image-20230727234929884"></p>
-<h3 id="2、方法二（有点复杂，不太推荐）：token绑定法"><a href="#2、方法二（有点复杂，不太推荐）：token绑定法" class="headerlink" title="2、方法二（有点复杂，不太推荐）：token绑定法"></a>2、方法二（有点复杂，不太推荐）：token绑定法</h3><p>此方法的话可能需要先绑定token再进行使用token的功能去得到cookie，以下为操作过程</p>
-<p><strong>1、下载群文件里面的软件</strong></p>
+<h3 id="2、方法二（有点复杂，不太推荐）：token绑定法"><a href="#2、方法二（有点复杂，不太推荐）：token绑定法" class="headerlink" title="2、方法二（有点复杂，不太推荐）：token绑定法"></a>2、方法二（有点复杂，不太推荐）：token绑定法</h3><p><strong>1、下载群文件里面的软件</strong></p>
 <p>群文件这个文件夹里面的软件</p>
 <p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202307272340216.png" alt="image-20230727234022163"></p>
 <p><strong>2、打开该软件，并且登录账户</strong><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202307272342268.jpg" alt="Screenshot_2023-07-27-23-41-14-001_com.miui.home-"></p>
@@ -2240,76 +2239,6 @@
       </tags>
   </entry>
   <entry>
-    <title>内存分区模型</title>
-    <url>/2023/01/29/2023/Mon/10/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="内存分区模型"><a href="#内存分区模型" class="headerlink" title="内存分区模型"></a>内存分区模型</h1><p>C++程序在执行中时，将内存划分为<code>4个区域</code></p>
-<p><strong>1、代码区</strong>：存放函数的二进制代码，由操作系统进行管理。</p>
-<p><strong>2、全局区</strong>：存放全局变量和静态变量以及常量。</p>
-<p><strong>3、栈区</strong>：由编译器自动分配释放，存放函数的参数值，局部变量。</p>
-<p><strong>4、堆区</strong>：由程序员分配和释放，若程序员不释放，结束时由操作系统回收</p>
-<p><strong>内存四区的意义:</strong></p>
-<p>不同区域存放的数据，赋予不同的生命周期，给我们更大的灵活编程。</p>
-<h2 id="①程序运行前"><a href="#①程序运行前" class="headerlink" title="①程序运行前"></a>①程序运行前</h2><p>在程序编译后，生成了exe可执行程序，<code>未执行该程序前分为两个区域</code>。</p>
-<p>以下为内存四区的特点</p>
-<p><strong>代码区：</strong></p>
-<p>1、存放CPU执行的机器命令</p>
-<p>2、代码区是<code>共享</code>的,共享的目的是<code>对于频繁被执行的程序，只需要在内存中有一份代码即可</code>。（比如每执行了一次代码结束之后，就会生存一个exe文件，存储了之前执行成功的那份代码）</p>
-<p>3、代码区是<code>只读</code>的，使其制度的原因是<code>防止程序意外的修改了它的代码</code></p>
-<p><strong>全局区：</strong></p>
-<p>1、全局变量和静态变量存放在此。</p>
-<p>2、全局区还包含了<code>常量区</code>，<code>字符串常量</code>和<code>其他常量</code>也存放在此。</p>
-<p>3、<code>读区域的数据在程序结束后由操作系统释放</code>。</p>
-<p>那么对于全局区和不在全局区的变量究竟有什么样的区别呢？我们来看下面的代码</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 全局变量</span></span><br><span class="line"><span class="type">int</span> g_a = <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> g_b = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// const修饰的全局变量</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> c_g_a = <span class="number">10</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> c_g_b = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 全局区</span></span><br><span class="line">    <span class="comment">// 全局变量、静态变量、常量</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 创建普通的局部变量</span></span><br><span class="line">    <span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> b = <span class="number">10</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;局部变量a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;a &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;局部变量b的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;b &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;全局变量g_a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;g_a &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;全局变量g_a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;g_a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 静态变量</span></span><br><span class="line">    <span class="type">static</span> <span class="type">int</span> s_a = <span class="number">10</span>;</span><br><span class="line">    <span class="type">static</span> <span class="type">int</span> s_b = <span class="number">10</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;静态变量s_a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;s_a &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;静态变量s_b的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;s_b &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 常量</span></span><br><span class="line">    <span class="comment">// 字符串常量</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;字符串常量的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)<span class="string">&quot;hello world&quot;</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// const修饰的变量</span></span><br><span class="line">    <span class="comment">// const修饰的全局变量</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;全局常量c_g_a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;c_g_a &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;全局常量c_g_b的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;c_g_b &lt;&lt; endl;</span><br><span class="line">    <span class="comment">// const修饰的局部变量</span></span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> c_a = <span class="number">10</span>;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> c_b = <span class="number">10</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;局部常量c_a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;c_a &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;局部常量c_b的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;c_b &lt;&lt; endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p> 代码的输出结果如下:<br><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282110148.png" alt="image-20230128211013957"></p>
-<p>我们可以发现处于全局区的变量地址十分相近，而局部变量就和全局区的变量相差很大，大概的图解如下。</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282116525.png" alt="image-20230128211634405"></p>
-<h2 id="②程序运行后"><a href="#②程序运行后" class="headerlink" title="②程序运行后"></a>②程序运行后</h2><p><strong>栈区:</strong></p>
-<p>1、由编译器自动分配释放，存放函数的参数值，局部变量等</p>
-<p><strong>2、注意事项</strong>：<code>不要返回局部变量的地址</code>，栈区开辟的数据由编译器自动释放。</p>
-<p>注意事项中的实例如下所示:</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span>* <span class="title">func</span><span class="params">()</span><span class="comment">//在函数参数列表的变量也存放在栈区</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">10</span>;<span class="comment">//局部变量 存放在栈区，栈区的数据在函数执行完后自动释放</span></span><br><span class="line">    <span class="keyword">return</span> &amp;a;<span class="comment">//返回局部变量的地址。</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//接收func函数的返回值 </span></span><br><span class="line">    <span class="type">int</span>* p = <span class="built_in">func</span>();</span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl;<span class="comment">//第一个可以打印正确的数字是因为编译器做了保留</span></span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl;<span class="comment">//第二次这个数据就不在保留了</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);   </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p> 由于多种编译器打印结果不一样，以下展示DEVC++，VSCODE，VS2019的结果</p>
-<p><strong>DEVC++：</strong></p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282133584.png" alt="image-20230128213301511"></p>
-<p><strong>VSCODE：</strong></p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282133388.png" alt="image-20230128213326319"></p>
-<p><strong>报错信息:</strong></p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282133856.png" alt="image-20230128213350814"></p>
-<p><strong>VS2019:</strong></p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282134134.png" alt="image-20230128213438074"></p>
-<p>虽然可能编译器不同会产生不同的结果，但是对于这样错误的做法仍然不推荐！！！</p>
-<p><strong>堆区:</strong></p>
-<p>1、由程序员分配释放，若程序员不释放，<code>程序结束时由操作系统回收</code>。</p>
-<p>2、在C++主要利用<code>new</code>在堆区开辟内存。 </p>
-<p> 对于1、的解释我们可以用如下例子帮忙理解，同样是上面的代码，但是不太相同。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> *<span class="title">func</span><span class="params">()</span> <span class="comment">// 在函数参数列表的变量也存放在栈区</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//利用nex关键字 可以讲数据开辟在堆区</span></span><br><span class="line">    <span class="comment">//指针 本质也是局部变量，放在战上，指针保存的数据（堆区的编号地址）是放在堆区的。</span></span><br><span class="line">    <span class="type">int</span> *a = <span class="keyword">new</span> <span class="built_in">int</span>(<span class="number">10</span>);<span class="comment">//用new关键字在堆区开辟数据并返回地址</span></span><br><span class="line">    <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 接收func函数的返回值</span></span><br><span class="line">    <span class="type">int</span> *p = <span class="built_in">func</span>();</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl; <span class="comment">// 第一个可以打印正确的数字是因为编译器做了保留</span></span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl; <span class="comment">// 第二次这个数据就不在保留了</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这时打印的结果就无论如何都是对应的结果了</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282144905.png" alt="image-20230128214425834"></p>
-<p>对于上面的代码堆区以及栈区的图解如下：<br><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282149613.png" alt="image-20230128214911547"></p>
-<h2 id="③new操作符"><a href="#③new操作符" class="headerlink" title="③new操作符"></a>③new操作符</h2><p>C++中利用<code>new</code>操作符在堆区开辟数据</p>
-<p>堆区开辟的数据，由程序员手动开辟，手动释放、释放利用操作符<code>delete</code></p>
-<p><strong>语法：</strong></p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">new</span> 数据类型</span><br></pre></td></tr></table></figure>
-
-<p><code>利用new创建的数据，会返回该数据对应的类型指针。</code></p>
-<p>对于new的基本语法，如下例子</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">//1、new的基本语法</span></span><br><span class="line"><span class="function"><span class="type">int</span>* <span class="title">func</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//在堆区创建一个整形的数据</span></span><br><span class="line">    <span class="comment">//new返回的是该数据类型的指针</span></span><br><span class="line">    <span class="type">int</span>* p = <span class="keyword">new</span> <span class="built_in">int</span>(<span class="number">10</span>);</span><br><span class="line">    <span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//测试案例一</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">test01</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span>* p = <span class="built_in">func</span>();</span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl;</span><br><span class="line"><span class="comment">/*    delete p;</span></span><br><span class="line"><span class="comment">    cout &lt;&lt; *p &lt;&lt; endl;*/</span><span class="comment">//当程序执行到此处会报错，此操作非法</span></span><br><span class="line">    <span class="comment">//堆区的数据由程序员管理开辟，程序员来进行管理释放</span></span><br><span class="line">    <span class="comment">//如果想释放堆区的数据，利用关键字delete</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//测试案例二</span></span><br><span class="line"><span class="comment">//在堆区开辟数组</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">test02</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//在堆区创建10整形数据的数组</span></span><br><span class="line">    <span class="type">int</span>* arr = <span class="keyword">new</span> <span class="type">int</span>[<span class="number">10</span>];<span class="comment">//10代表数组由十个元素,返回数组连续空间的首地址</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//操控数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        arr[i] = <span class="number">100</span> + i;<span class="comment">//给10个元素赋值100-109</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//验证数据是否有</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cout &lt;&lt; arr[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//释放堆区的数组</span></span><br><span class="line">    <span class="comment">//释放数组的时候，要加[]才可以</span></span><br><span class="line">    <span class="keyword">delete</span>[] arr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">test01</span>();</span><br><span class="line">    <span class="built_in">test02</span>();</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>以下为输出结果:</p>
-<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282307395.png" alt="image-20230128230715320"></p>
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>函数提高</title>
     <url>/2023/01/31/2023/Mon/12/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="函数提高"><a href="#函数提高" class="headerlink" title="函数提高"></a>函数提高</h1><h2 id="①函数默认参数"><a href="#①函数默认参数" class="headerlink" title="①函数默认参数"></a>①函数默认参数</h2><p>在C++中，<code>函数形参列表中的形参是可以有默认值的</code></p>
@@ -2387,6 +2316,76 @@
 
 <p>输出结果如下所示</p>
 <p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301310056999.png" alt="image-20230131005638921"></p>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>内存分区模型</title>
+    <url>/2023/01/29/2023/Mon/10/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="内存分区模型"><a href="#内存分区模型" class="headerlink" title="内存分区模型"></a>内存分区模型</h1><p>C++程序在执行中时，将内存划分为<code>4个区域</code></p>
+<p><strong>1、代码区</strong>：存放函数的二进制代码，由操作系统进行管理。</p>
+<p><strong>2、全局区</strong>：存放全局变量和静态变量以及常量。</p>
+<p><strong>3、栈区</strong>：由编译器自动分配释放，存放函数的参数值，局部变量。</p>
+<p><strong>4、堆区</strong>：由程序员分配和释放，若程序员不释放，结束时由操作系统回收</p>
+<p><strong>内存四区的意义:</strong></p>
+<p>不同区域存放的数据，赋予不同的生命周期，给我们更大的灵活编程。</p>
+<h2 id="①程序运行前"><a href="#①程序运行前" class="headerlink" title="①程序运行前"></a>①程序运行前</h2><p>在程序编译后，生成了exe可执行程序，<code>未执行该程序前分为两个区域</code>。</p>
+<p>以下为内存四区的特点</p>
+<p><strong>代码区：</strong></p>
+<p>1、存放CPU执行的机器命令</p>
+<p>2、代码区是<code>共享</code>的,共享的目的是<code>对于频繁被执行的程序，只需要在内存中有一份代码即可</code>。（比如每执行了一次代码结束之后，就会生存一个exe文件，存储了之前执行成功的那份代码）</p>
+<p>3、代码区是<code>只读</code>的，使其制度的原因是<code>防止程序意外的修改了它的代码</code></p>
+<p><strong>全局区：</strong></p>
+<p>1、全局变量和静态变量存放在此。</p>
+<p>2、全局区还包含了<code>常量区</code>，<code>字符串常量</code>和<code>其他常量</code>也存放在此。</p>
+<p>3、<code>读区域的数据在程序结束后由操作系统释放</code>。</p>
+<p>那么对于全局区和不在全局区的变量究竟有什么样的区别呢？我们来看下面的代码</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 全局变量</span></span><br><span class="line"><span class="type">int</span> g_a = <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> g_b = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// const修饰的全局变量</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> c_g_a = <span class="number">10</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> c_g_b = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 全局区</span></span><br><span class="line">    <span class="comment">// 全局变量、静态变量、常量</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 创建普通的局部变量</span></span><br><span class="line">    <span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> b = <span class="number">10</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;局部变量a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;a &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;局部变量b的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;b &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;全局变量g_a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;g_a &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;全局变量g_a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;g_a &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 静态变量</span></span><br><span class="line">    <span class="type">static</span> <span class="type">int</span> s_a = <span class="number">10</span>;</span><br><span class="line">    <span class="type">static</span> <span class="type">int</span> s_b = <span class="number">10</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;静态变量s_a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;s_a &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;静态变量s_b的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;s_b &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 常量</span></span><br><span class="line">    <span class="comment">// 字符串常量</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;字符串常量的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)<span class="string">&quot;hello world&quot;</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// const修饰的变量</span></span><br><span class="line">    <span class="comment">// const修饰的全局变量</span></span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;全局常量c_g_a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;c_g_a &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;全局常量c_g_b的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;c_g_b &lt;&lt; endl;</span><br><span class="line">    <span class="comment">// const修饰的局部变量</span></span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> c_a = <span class="number">10</span>;</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> c_b = <span class="number">10</span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;局部常量c_a的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;c_a &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;局部常量c_b的地址为: &quot;</span> &lt;&lt; (<span class="type">int</span>)&amp;c_b &lt;&lt; endl;</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 代码的输出结果如下:<br><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282110148.png" alt="image-20230128211013957"></p>
+<p>我们可以发现处于全局区的变量地址十分相近，而局部变量就和全局区的变量相差很大，大概的图解如下。</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282116525.png" alt="image-20230128211634405"></p>
+<h2 id="②程序运行后"><a href="#②程序运行后" class="headerlink" title="②程序运行后"></a>②程序运行后</h2><p><strong>栈区:</strong></p>
+<p>1、由编译器自动分配释放，存放函数的参数值，局部变量等</p>
+<p><strong>2、注意事项</strong>：<code>不要返回局部变量的地址</code>，栈区开辟的数据由编译器自动释放。</p>
+<p>注意事项中的实例如下所示:</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span>* <span class="title">func</span><span class="params">()</span><span class="comment">//在函数参数列表的变量也存放在栈区</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">10</span>;<span class="comment">//局部变量 存放在栈区，栈区的数据在函数执行完后自动释放</span></span><br><span class="line">    <span class="keyword">return</span> &amp;a;<span class="comment">//返回局部变量的地址。</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//接收func函数的返回值 </span></span><br><span class="line">    <span class="type">int</span>* p = <span class="built_in">func</span>();</span><br><span class="line">    </span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl;<span class="comment">//第一个可以打印正确的数字是因为编译器做了保留</span></span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl;<span class="comment">//第二次这个数据就不在保留了</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);   </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 由于多种编译器打印结果不一样，以下展示DEVC++，VSCODE，VS2019的结果</p>
+<p><strong>DEVC++：</strong></p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282133584.png" alt="image-20230128213301511"></p>
+<p><strong>VSCODE：</strong></p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282133388.png" alt="image-20230128213326319"></p>
+<p><strong>报错信息:</strong></p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282133856.png" alt="image-20230128213350814"></p>
+<p><strong>VS2019:</strong></p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282134134.png" alt="image-20230128213438074"></p>
+<p>虽然可能编译器不同会产生不同的结果，但是对于这样错误的做法仍然不推荐！！！</p>
+<p><strong>堆区:</strong></p>
+<p>1、由程序员分配释放，若程序员不释放，<code>程序结束时由操作系统回收</code>。</p>
+<p>2、在C++主要利用<code>new</code>在堆区开辟内存。 </p>
+<p> 对于1、的解释我们可以用如下例子帮忙理解，同样是上面的代码，但是不太相同。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> *<span class="title">func</span><span class="params">()</span> <span class="comment">// 在函数参数列表的变量也存放在栈区</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//利用nex关键字 可以讲数据开辟在堆区</span></span><br><span class="line">    <span class="comment">//指针 本质也是局部变量，放在战上，指针保存的数据（堆区的编号地址）是放在堆区的。</span></span><br><span class="line">    <span class="type">int</span> *a = <span class="keyword">new</span> <span class="built_in">int</span>(<span class="number">10</span>);<span class="comment">//用new关键字在堆区开辟数据并返回地址</span></span><br><span class="line">    <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// 接收func函数的返回值</span></span><br><span class="line">    <span class="type">int</span> *p = <span class="built_in">func</span>();</span><br><span class="line"></span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl; <span class="comment">// 第一个可以打印正确的数字是因为编译器做了保留</span></span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl; <span class="comment">// 第二次这个数据就不在保留了</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这时打印的结果就无论如何都是对应的结果了</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282144905.png" alt="image-20230128214425834"></p>
+<p>对于上面的代码堆区以及栈区的图解如下：<br><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282149613.png" alt="image-20230128214911547"></p>
+<h2 id="③new操作符"><a href="#③new操作符" class="headerlink" title="③new操作符"></a>③new操作符</h2><p>C++中利用<code>new</code>操作符在堆区开辟数据</p>
+<p>堆区开辟的数据，由程序员手动开辟，手动释放、释放利用操作符<code>delete</code></p>
+<p><strong>语法：</strong></p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">new</span> 数据类型</span><br></pre></td></tr></table></figure>
+
+<p><code>利用new创建的数据，会返回该数据对应的类型指针。</code></p>
+<p>对于new的基本语法，如下例子</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">//1、new的基本语法</span></span><br><span class="line"><span class="function"><span class="type">int</span>* <span class="title">func</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//在堆区创建一个整形的数据</span></span><br><span class="line">    <span class="comment">//new返回的是该数据类型的指针</span></span><br><span class="line">    <span class="type">int</span>* p = <span class="keyword">new</span> <span class="built_in">int</span>(<span class="number">10</span>);</span><br><span class="line">    <span class="keyword">return</span> p;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//测试案例一</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">test01</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span>* p = <span class="built_in">func</span>();</span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; *p &lt;&lt; endl;</span><br><span class="line"><span class="comment">/*    delete p;</span></span><br><span class="line"><span class="comment">    cout &lt;&lt; *p &lt;&lt; endl;*/</span><span class="comment">//当程序执行到此处会报错，此操作非法</span></span><br><span class="line">    <span class="comment">//堆区的数据由程序员管理开辟，程序员来进行管理释放</span></span><br><span class="line">    <span class="comment">//如果想释放堆区的数据，利用关键字delete</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//测试案例二</span></span><br><span class="line"><span class="comment">//在堆区开辟数组</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">test02</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//在堆区创建10整形数据的数组</span></span><br><span class="line">    <span class="type">int</span>* arr = <span class="keyword">new</span> <span class="type">int</span>[<span class="number">10</span>];<span class="comment">//10代表数组由十个元素,返回数组连续空间的首地址</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//操控数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        arr[i] = <span class="number">100</span> + i;<span class="comment">//给10个元素赋值100-109</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//验证数据是否有</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cout &lt;&lt; arr[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//释放堆区的数组</span></span><br><span class="line">    <span class="comment">//释放数组的时候，要加[]才可以</span></span><br><span class="line">    <span class="keyword">delete</span>[] arr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">test01</span>();</span><br><span class="line">    <span class="built_in">test02</span>();</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以下为输出结果:</p>
+<p><img src="https://luoxi2334.oss-cn-shanghai.aliyuncs.com/luoxi-picture/202301282307395.png" alt="image-20230128230715320"></p>
 ]]></content>
       <categories>
         <category>C++</category>
